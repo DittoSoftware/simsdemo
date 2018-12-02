@@ -18,7 +18,7 @@ use PhpOffice\PhpSpreadsheet\IOFactory;
 use PhpOffice\PhpSpreadsheet\Helper\Sample;
 
 // require_once $_SERVER['DOCUMENT_ROOT'] . '/demo/src/Bootstrap.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . 'D:\home\site\wwwroot\application\src\Bootstrap.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '\application\src\Bootstrap.php';
 
 
 // C:\xampp\htdocs\ProjectDemo\CI\application\src
