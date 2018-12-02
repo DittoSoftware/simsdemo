@@ -39,7 +39,9 @@ if($PASSWORD) {
 // must be in UTF-8 or `basename` doesn't work
 setlocale(LC_ALL,'en_US.UTF-8');
 
-chdir('C:\xampp\htdocs\ProjectDemo\CI\application\files');
+//chdir('C:\xampp\htdocs\ProjectDemo\CI\application\files');
+chdir('\application\files');
+
 
 $tmp_dir = dirname($_SERVER['SCRIPT_FILENAME']);
 if(DIRECTORY_SEPARATOR==='\\') $tmp_dir = str_replace('/',DIRECTORY_SEPARATOR,$tmp_dir);
