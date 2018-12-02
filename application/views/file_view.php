@@ -40,7 +40,7 @@ if($PASSWORD) {
 setlocale(LC_ALL,'en_US.UTF-8');
 
 //chdir('C:\xampp\htdocs\ProjectDemo\CI\application\files');
-chdir('\application\files');
+chdir('D:\home\site\wwwroot\application\files');
 
 
 $tmp_dir = dirname($_SERVER['SCRIPT_FILENAME']);
