@@ -18,7 +18,7 @@ use PhpOffice\PhpSpreadsheet\IOFactory;
 use PhpOffice\PhpSpreadsheet\Helper\Sample;
 
 // require_once $_SERVER['DOCUMENT_ROOT'] . '/demo/src/Bootstrap.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '\ProjectDemo\CI\application\src\Bootstrap.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . 'D:\home\site\wwwroot\application\src\Bootstrap.php';
 
 
 // C:\xampp\htdocs\ProjectDemo\CI\application\src
@@ -32,7 +32,7 @@ $inputFileType = 'Xlsx';
 if(isset($_SESSION['file'])){
   echo 'set';
 }else{
-$inputFileName = '.\ProjectDemo\CI\application\views\load.xlsx';
+$inputFileName = 'D:\home\site\wwwroot\application\views\load.xlsx';
 
 
 }
@@ -46,7 +46,7 @@ $sheetData = $spreadsheet->getActiveSheet()->toArray();
 // var_dump($sheetData);
 
 //create connection
-$conn =  new mysqli('localhost','root','','StudentTest');
+$conn =  new mysqli('cissims.mysql.database.azure.com','sims@cissims','Ospreys2019','csv_db');
 
 $trunc = "TRUNCATE TABLE StudentData";
 $conn->query($trunc);
