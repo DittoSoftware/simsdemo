@@ -2,9 +2,9 @@
 function fieldCount($field,$table)
 {
 //This is just a file that holds the database info and can be whatever name you want
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
+        $servername = "cissims.mysql.database.azure.com";
+        $username = "sims@cissims";
+        $password = "Ospreys2019";
         $dbname = "csv_db";
 try{
     $connection = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
