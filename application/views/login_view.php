@@ -8,8 +8,8 @@
 // mysqli_connect($host,$user,$password);
 // mysqli_select_db($db);
 
-$con = new mysqli('localhost', 'root', '');
-mysqli_select_db($con, 'StudentTest');
+$con = new mysqli('cissims.mysql.database.azure.com', 'sims@cissims', 'Ospreys2019');
+mysqli_select_db($con, 'csv_db');
 
 if(isset($_POST['username'])){
     $uname=$_POST['username'];
