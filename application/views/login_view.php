@@ -28,7 +28,10 @@ if(isset($_POST['username'])){
     }
     else{
 
-        echo "Unsuccessful Login";
+        //echo "Unsuccessful Login";
+		$message = "Invalid Credentials";
+		echo "<script type='text/javascript'>alert('$message');</script>";
+		
         exit();
     }
 
