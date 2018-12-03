@@ -32,7 +32,7 @@ if(isset($_POST['username'])){
 		$message = "Invalid Credentials";
 		echo "<script type='text/javascript'>alert('$message');</script>";
 		
-        exit();
+        //exit();
     }
 
 }
