@@ -89,8 +89,8 @@ for($row=2; $row <= count($sheetData) - 1; $row++){
 <table>
   <tr>
     <td>
-      <form method="post" action="export.php">
-        <input type="submit" action="export.php" name="export_excel" class="btn btn-success" value="Download">
+      <form method="post" action="export">
+        <input type="submit" action="export" name="export_excel" class="btn btn-success" value="Download">
     </form>
       </td>
       <td>
