@@ -80,7 +80,7 @@
     <h1>Welcome, Admin</h1>
     <h2>Student Data Dashboard</h2>
     <form method="POST" action="main?action=chart_id=">
-    <a href="home">Home</a>
+    <button type="button"  onclick="location.href=\'home\'">Home</button>
     <input type="submit" value="Display Chart:">
     <select name="chart_id">
     <option value="0" name="0">Select Option</option>
@@ -153,7 +153,7 @@
     <h1>Welcome, Admin</h1>
     <h2>Student Data Dashboard</h2>
     <form method="POST" action="main?action=chart_id=">
-    <a href="home">Home</a>
+    <button type="button"  onclick="location.href=\'home\'">Home</button>
     <input type="submit" value="Display Chart:">
     <select name="chart_id">
     <option value="0" name="0">Select Option</option>
