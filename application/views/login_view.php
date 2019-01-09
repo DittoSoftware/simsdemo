@@ -43,7 +43,7 @@ if(isset($_POST['username'])){
             <title>Login</title>
             <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>CSS/login.css">
             <style>
-    body{
+    /*body{
     margin: 0%;
     padding: 0;
     background-image: url(loginBackground.jpg);
@@ -139,6 +139,7 @@ div {
     padding: 25px;
     margin: 15px;
 }
+*/
 </style>
 
     </head>
