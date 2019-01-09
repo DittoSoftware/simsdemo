@@ -41,7 +41,7 @@ if(isset($_POST['username'])){
 <!DOCTYPE html>
     <head>
             <title>Login</title>
-            <!-- <link rel="stylesheet" type="text/css" href="login.css"> -->
+            <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>CSS/login.css">
             <style>
     body{
     margin: 0%;
