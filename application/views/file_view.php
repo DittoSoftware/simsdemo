@@ -39,8 +39,8 @@ if($PASSWORD) {
 // must be in UTF-8 or `basename` doesn't work
 setlocale(LC_ALL,'en_US.UTF-8');
 
-//chdir('C:\xampp\htdocs\ProjectDemo\CI\application\files');
-chdir('D:\home\site\wwwroot\application\files');
+chdir('C:\xampp\htdocs\simsdemo\application\files');
+//chdir('D:\home\site\wwwroot\application\files');
 
 
 $tmp_dir = dirname($_SERVER['SCRIPT_FILENAME']);
@@ -420,6 +420,7 @@ $(function(){
 			.addClass('download').text('download');
 		var $delete_link = $('<a href="#" />').attr('data-file',data.path).addClass('delete').text('delete');
 		var perms = [];
+		
 		if(data.is_readable) perms.push('read');
 		if(data.is_writable) perms.push('write');
 		if(data.is_executable) perms.push('exec');
@@ -466,7 +467,7 @@ $(function(){
 <center>
 <br>
 <br>
-<h1>Admin Homepage</h1>
+<h1>File Manager</h1>
 <br>
 <form method="post" action="load.php">
 	<button type="button" onclick="location.href='home'">Home</button>
