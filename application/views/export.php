@@ -1,7 +1,7 @@
 <?php
 
   $con = new mysqli('cissims.mysql.database.azure.com', 'sims@cissims', 'Ospreys2019');
-  mysqli_select_db($con, 'StudentTest');
+  mysqli_select_db($con, 'csv_db');
 
   $sql = "SELECT * FROM StudentData";
   $result = mysqli_query($con,$sql);
