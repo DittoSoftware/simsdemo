@@ -11,11 +11,12 @@
 <html>
 <head>
 	<title>SIMS-Home</title>
-  <!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>application\views\login.css"> -->
-  <link rel="stylesheet" type="text/css" href="application\views\login.css">
+   <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>CSS/login.css">
+  <!--<link rel="stylesheet" type="text/css" href="application\views\login.css"> -->
 
 </head>
-<body style="background-color:#dddddd";>
+ <!--<body style="background-color:#dddddd";> -->
+<body>	
 <center>
 <br>
 <br>
