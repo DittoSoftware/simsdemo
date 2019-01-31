@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Data Preview</title>
-    <link rel="stylesheet" type="text/css" href="load.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>load.css">
 </head>
 <body style="background: url(loginBackground.jpg);">
 
