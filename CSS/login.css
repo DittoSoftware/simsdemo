@@ -2,7 +2,7 @@ body{
     margin: 0%;
     padding: 0;
     background-image: url("https://cissimsdev.azurewebsites.net/application/views/loginBackground.jpg");
-    background-color: lightgrey;
+   /* background-color: lightgrey;*/
     background-size: cover;
     background-position: top;
     font-family: sans-serif;
