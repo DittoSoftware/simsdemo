@@ -150,7 +150,7 @@
     </head>
     <body style="background-color:#dddddd";>
     <center>
-    <h1>Welcome, Admin</h1>
+   
     <h2>Student Data Dashboard</h2>
     <form method="POST" action="main?action=chart_id=">
     <button type="button"  onclick="location.href=\'home\'">Home</button>
