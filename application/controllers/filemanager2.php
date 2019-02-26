@@ -4,7 +4,7 @@
     {
         public function index()
         {
-            $this->load->view('file_view');
+            $this->load->view('file_view2');
         }
         
     }
