@@ -23,7 +23,7 @@
 <h1>Admin Homepage</h1>
 <br>
 <form method="post" action="load.php">
-	<button type="button" onclick="location.href='filemanager2'">File Manager</button>
+	<button type="button" onclick="location.href='filemanager'">File Manager</button>
 	<!-- <input type="text" id="svalue"> -->
   <button type="button" onclick="location.href='main'">Dashboard</button>
 
