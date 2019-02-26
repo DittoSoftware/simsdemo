@@ -466,7 +466,7 @@ $(function(){
 <center>
 <br>
 <br>
-<h1>Admin Homepage</h1>
+<h1>File Manager</h1>
 <br>
 <form method="post" action="load.php">
 	<button type="button" onclick="location.href='home'">Home</button>
@@ -476,7 +476,7 @@ $(function(){
   <button type="button" onclick="alert('Feature Not Avaliable')">Account Manager</button>
 </form>
   <br>
-</center>
+
 
 
 <body>
