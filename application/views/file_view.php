@@ -39,7 +39,8 @@ if($PASSWORD) {
 // must be in UTF-8 or `basename` doesn't work
 setlocale(LC_ALL,'en_US.UTF-8');
 
-chdir('C:\xampp\htdocs\simsdemo\application\files');
+chdir('C:\xampp\htdocs');
+//chdir('C:\xampp\htdocs\simsdemo\application\files');
 //chdir('D:\home\site\wwwroot\application\files');
 
 
@@ -461,6 +462,9 @@ $(function(){
 		return pos ? [parseInt(d/10),".",d%10," ",s[pos]].join('') : bytes + ' bytes';
 	}
 })
+function myFunction(){
+	alert ("My Function Works");
+}
 
 </script>
 </head>
@@ -481,13 +485,19 @@ $(function(){
 
 
 <body>
+
 <div class="window">
+
 <div id="top">
    <?php if($allow_create_folder): ?>
 	<form action="?" method="post" id="mkdir" >
 		<label for=dirname>Create New Folder</label><input id=dirname type=text name=name value="" />
 		<input type="submit" value="create" />
+		<br>
+		<br>
+		<button onclick="myFunction()">Combine Files</button>
 	</form>
+	
 
    <?php endif; ?>
    <?php if($allow_upload): ?>
@@ -501,6 +511,7 @@ $(function(){
 
 	<div id="breadcrumb">&nbsp;</div>
 <div id="upload_progress"></div>
+
 <table  id="table"><thead><tr>
 	<th>Name</th>
 	<th>Size</th>
@@ -512,5 +523,7 @@ $(function(){
 <tbody class="wrap" id="list">
 </tbody>
 </table>
+
 </div>
-</body></center></html>
+
+</body></html>
