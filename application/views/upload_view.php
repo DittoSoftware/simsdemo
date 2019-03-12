@@ -380,7 +380,8 @@ $(function(){
 				$row.find('.progress').css('width',(e.loaded/e.total*100 | 0)+'%' );
 			}
 		};
-	    xhr.send(fd);
+		xhr.send(fd);
+		alert("File Uploaded");
 	}
 	function renderFileUploadRow(file,folder) {
 		return $row = $('<div/>')
@@ -464,8 +465,16 @@ $(function(){
 	}
 })
 function myFunction(){
-	alert ("My Function Works");
+	var pswd = prompt("Please enter upload password.");
+	if (pswd != "cisjax"){
+		window.location.assign("http://cisjax.org");
+	} else {
+		document.getElementById("file_drop_target").style.display="inline";
+		document.getElementById("upload_button").style.display="none";
+	}
 }
+
+
 
 </script>
 </head>
@@ -483,18 +492,19 @@ function myFunction(){
 
 <div id="top">
    
-	
-
-   
+	<div id="upload_button">
+<button onclick="myFunction()">Enter Upload Password</button>
+   </div>
    <?php if($allow_upload): ?>
 
-	<div id="file_drop_target">
+	<div id="file_drop_target" style="display:none">
 		Drag Files Here To Upload
 		<b>or</b>
 		<input type="file" multiple />
+
 	</div>
    <?php endif; ?>
 
 
-
+</center>
 </body></html>
