@@ -197,7 +197,7 @@ $MAX_UPLOAD_SIZE = min(asBytes(ini_get('post_max_size')), asBytes(ini_get('uploa
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
 <style>
-div.window{
+/*div.window{
 	width: 70%;
     border: 10px solid black;
     padding: 25px;
@@ -207,6 +207,7 @@ div.window{
 	overflow-y:scroll;
 	background-color: white:
 }
+*/
 body {font-family: "lucida grande","Segoe UI",Arial, sans-serif; font-size: 14px;width:1024;padding:1em;margin:0;background: url(loginBackground.jpg)}
 th {font-weight: normal; color: #1F75CC; background-color: #F0F9FF; padding:.5em 1em .5em .2em;
 	text-align: left;cursor:pointer;user-select: none;}
@@ -471,17 +472,9 @@ function myFunction(){
 <center>
 <br>
 <br>
-<h1>File Manager</h1>
+<h1>Upload Files Here</h1>
 <br>
-<form method="post" action="load.php">
-	<button type="button" onclick="location.href='home'">Home</button>
-	<!-- <input type="text" id="svalue"> -->
-  <button type="button" onclick="location.href='main'">Dashboard</button>
 
-  <button type="button" onclick="alert('Feature Not Avaliable')">Account Manager</button>
-</form>
-  <br>
-</center>
 
 
 <body>
@@ -489,6 +482,9 @@ function myFunction(){
 <div class="window">
 
 <div id="top">
+   
+	
+
    
    <?php if($allow_upload): ?>
 
@@ -499,11 +495,6 @@ function myFunction(){
 	</div>
    <?php endif; ?>
 
-	<div id="breadcrumb">&nbsp;</div>
-<div id="upload_progress"></div>
 
-
-
-</div>
 
 </body></html>
