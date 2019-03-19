@@ -45,7 +45,7 @@
 $(document).ready(function() {
     $('#example').DataTable( {
         // "ajax": '../ajax/data/output.txt'
-        "ajax": 'D:\home\site\wwwroot\application\files\output.txt',
+        "ajax": '<?php echo base_url();?>output.txt',
         "pageLength": 20,
         dom: 'Blfrtip',
         buttons: [ 'excelHtml5'
