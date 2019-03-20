@@ -1,5 +1,5 @@
 <?php
-function fieldCount($field,$table)
+function fieldCount($field,$table,$school)
 {
 //This is just a file that holds the database info and can be whatever name you want
         $servername = "cissims.mysql.database.azure.com";
@@ -7,10 +7,20 @@ function fieldCount($field,$table)
         $password = "Ospreys2019";
         $dbname = "csv_db";
 try{
-    $connection = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $connection->prepare("SELECT $field, COUNT(*) AS count FROM $table GROUP BY $field");
-    $stmt->execute();
+    if($school != '0')
+    {
+        $connection = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+        $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $stmt = $connection->prepare("SELECT $field, COUNT(*) AS count FROM $table WHERE School_Number = $school GROUP BY $field");
+        $stmt->execute();  
+    }
+    else
+    {
+        $connection = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+        $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $stmt = $connection->prepare("SELECT $field, COUNT(*) AS count FROM $table GROUP BY $field");
+        $stmt->execute();
+    }
 
     $results=$stmt->fetchAll(PDO::FETCH_ASSOC);
     // Creates an array similar as the following:
