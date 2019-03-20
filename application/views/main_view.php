@@ -1,6 +1,5 @@
 <?php
 require('fieldCount.php');
-require('db_config.php');
 processPageRequest();
 
     function processPageRequest()
