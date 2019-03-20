@@ -124,7 +124,7 @@ if(isset($_POST["submit"])){
         $removed = array_shift($sheetData);
         $allData = array_merge($allData, $sheetData);
         // header("Location: http://localhost/simsdemo/index.php/merge");
-        header("Location: https://cissimsdev.azurewebsites.net/index.php/merge");
+        //header("Location: https://cissimsdev.azurewebsites.net/index.php/merge");
 
     }
 
@@ -141,6 +141,8 @@ if(isset($_POST["submit"])){
     $last = fopen("output.txt", "a");
     fwrite($last, "}");
     fclose($last);
+	header("Location: https://cissimsdev.azurewebsites.net/index.php/merge");
+  
   }
   else{
     echo '<script language="javascript">';
