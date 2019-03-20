@@ -88,87 +88,85 @@ processPageRequest();
                 <option value="0141">GRAND PARK CAREER CENTER</option>
                 <option value="0151">BRENTWOOD ELEMENTARY SCHOOL</option>
                 <option value="0291">THE BRIDGE</option>
-                <option value="0061">MATTIE V RUTHERFORD ALT ED CTR</option>
-                <option value="0141">GRAND PARK CAREER CENTER</option>
-                <option value="0151">BRENTWOOD ELEMENTARY SCHOOL</option>
-                <option value="0291">THE BRIDGE</option>
- 	
-<!-- 0331	ROBERT E LEE HIGH SCHOOL	
-0351	ANDREW JACKSON HIGH SCHOOL	
-0371	HENRY F KITE ELEMENTARY SCHOOL	
-0471	LONE STAR HIGH SCHOOL	
-0491	DUVAL REGIONAL JUVENILE DETENTION CENTER	
-0531	DUVAL MYCROSCHOOL	
-0621	OCEANWAY SCHOOL	
-0631	DUNCAN U FLETCHER MIDDLE SCHOOL	
-0661	ALFRED I DUPONT MIDDLE SCHOOL	
-0691	LAKE SHORE MIDDLE SCHOOL	
-0701	NORTH SHORE ELEMENTARY	
-0731	JOHN LOVE ELEMENTARY SCHOOL	
-0741	LAKE FOREST ELEMENTARY SCHOOL	
-0811	PACE CENTER FOR GIRLS-JAX	
-0821	LOVE GROVE ELEMENTARY SCHOOL	
-0831	SAN JOSE ELEMENTARY SCHOOL	
-0841	BAYVIEW ELEMENTARY SCHOOL	
-0851	LAKE LUCINA ELEMENTARY SCHOOL	
-0861	TERRY PARKER HIGH SCHOOL	
-0891	WOODLAND ACRES ELEMENTARY SCHL	
-0911	SALLYE B MATHIS ELEMENTARY SCHOOL	
-0931	PINEDALE ELEMENTARY SCHOOL	
-0961	JEAN RIBAULT HIGH SCHOOL	
-0971	CEDAR HILLS ELEMENTARY SCHOOL	
-1061	LONG BRANCH ELEMENTARY SCHOOL	
-1161	SADIE T TILLIS ELEMENTARY  SCHOOL	
-1181	SCHOOL FOR ACCELERATED LEARNING TECHNOLOGIES	
-1281	SUSIE E TOLBERT ELEMENTARY SCHOOL	
-1461	MATTHEW W GILBERT MIDDLE SCHOOL	
-1491	SMART POPE LIVINGSTON ELEM	
-1501	NEW BERLIN ELEMENTARY SCHOOL	
-1542	JOHN E FORD K-8 SCHOOL	
-1551	NORTHWESTERN MIDDLE SCHOOL	
-1561	YWLAYMLA	
-1581	GEORGE WASHINGTON CARVER ELEM	
-1611	BARTRAM SPRINGS ELEMENTARY	
-1651	WILLIAM M RAINES HIGH SCHOOL	
-1661	CARTER G WOODSON ELEM SCHOOL	
-1691	S A HULL ELEMENTARY SCHOOL	
-1811	HOSPITAL AND HOMEBOUND	
-1821	YOUTH DEVELOPMENT CENTER	
-2051	PICKETT ELEMENTARY SCHOOL	
-2072	J E B STUART MIDDLE SCHOOL	
-2111	SOUTHSIDE MIDDLE SCHOOL	
-2121	JEAN RIBAULT MIDDLE SCHOOL	
-2131	ARLINGTON MIDDLE SCHOOL	
-2161	JEFFERSON DAVIS MIDDLE SCHOOL	
-2191	JOSEPH STILWELL MIDDLE SCHOOL	
-2211	NORMANDY VILLAGE ELEMENTARY SCHOOL	
-2361	MAMIE AGNES JONES ELEMENTARY SCHOOL	
-2381	FORT CAROLINE MIDDLE SCHOOL	
-2401	ARLINGTON HEIGHTS ELEMENTARY SCHOOL	
-2431	GREGORY DRIVE ELEMENTARY SCHOOL	
-2441	HIGHLANDS MIDDLE SCHOOL	
-2451	CROWN POINT ELEMENTARY SCHOOL	
-2481	EDWARD H WHITE HIGH SCHOOL	
-2501	PINE ESTATES ELEMENTARY SCHOOL	
-2531	TWIN LAKES ACADEMY MIDDLE	
-2541	MAYPORT MIDDLE SCHOOL	
-2551	ENTERPRISE LEARNING ACADEMY	
-2561	LANDMARK MIDDLE SCHOOL	
-2591	MANDARIN MIDDLE SCHOOL	
-2621	ANDREW A ROBINSON ELEMENTARY SCHOOL	
-2651	FIRST COAST HIGH SCHOOL	
-2681	ATLANTIC COAST HIGH SCHOOL	
-2691	BISCAYNE ELEMENTARY SCHOOL	
-2741	WESTVIEW K-8	
-2791	KERNAN MIDDLE SCHOOL	
-2801	FRANK H PETERSON ACADEMIES	
-2851	A PHILIP RANDOLPH ACADEMIES	
-3518	MCKAY SCHOLARSHIPSCHOOL OF EN	
-5421	BISCAYNE HIGH SCHOOL	
-5611	BRIDGEPREP ACADEMY DUVAL COUNTY	
-5631	SEASIDE CHARTER K-8 SCHOOL	
-N998	Home Education Setting	 -->
-
+                <option value="0331">ROBERT E LEE HIGH SCHOOL</option>
+                <option value="0351">ANDREW JACKSON HIGH SCHOOL</option>
+                <option value="0371">HENRY F KITE ELEMENTARY SCHOOL</option>
+                <option value="0471">LONE STAR HIGH SCHOOL</option>
+                <option value="0491">DUVAL REGIONAL JUVENILE DETENTION CENTER</option>
+                <option value="0531">DUVAL MYCROSCHOOL</option>
+                <option value="0621">OCEANWAY SCHOOL</option>
+                <option value="0631">DUNCAN U FLETCHER MIDDLE SCHOOL	</option>
+                <option value="0661">ALFRED I DUPONT MIDDLE SCHOOL</option>
+                <option value="0691">LAKE SHORE MIDDLE SCHOOL</option>
+                <option value="0701">NORTH SHORE ELEMENTARY</option>
+                <option value="0731">JOHN LOVE ELEMENTARY SCHOOL</option>
+                <option value="0741">LAKE FOREST ELEMENTARY SCHOOL</option>
+                <option value="0811">PACE CENTER FOR GIRLS-JAX</option>
+                <option value="0821">LOVE GROVE ELEMENTARY SCHOOL</option>
+                <option value="0831">SAN JOSE ELEMENTARY SCHOOL</option>
+                <option value="0841">BAYVIEW ELEMENTARY SCHOOL</option>
+                <option value="0851">LAKE LUCINA ELEMENTARY SCHOOL</option>
+                <option value="0861">TERRY PARKER HIGH SCHOOL</option>
+                <option value="0891">WOODLAND ACRES ELEMENTARY SCHOOL</option>
+                <option value="0911">SALLYE B MATHIS ELEMENTARY SCHOOL</option>
+                <option value="0931">PINEDALE ELEMENTARY SCHOOL</option>
+                <option value="0961">JEAN RIBAULT HIGH SCHOOL</option>
+                <option value="0971">CEDAR HILLS ELEMENTARY SCHOOL</option>
+                <option value="1061">LONG BRANCH ELEMENTARY SCHOOL</option>
+                <option value="0841">BAYVIEW ELEMENTARY SCHOOL</option>
+                <option value="0851">LAKE LUCINA ELEMENTARY SCHOOL</option>
+                <option value="0861">TERRY PARKER HIGH SCHOOL</option>
+                <option value="0891">WOODLAND ACRES ELEMENTARY SCHOOL</option>
+                <option value="1161">SADIE T TILLIS ELEMENTARY SCHOOL</option>	
+                <option value="1181">SCHOOL FOR ACCELERATED LEARNING TECHNOLOGIES</option>
+                <option value="1281">SUSIE E TOLBERT ELEMENTARY SCHOOL</option>
+                <option value="1461">MATTHEW W GILBERT MIDDLE SCHOOL</option>
+                <option value="1491">SMART POPE LIVINGSTON ELEM</option>
+                <option value="1501">NEW BERLIN ELEMENTARY SCHOOL</option>	
+                <option value="1542">JOHN E FORD K-8 SCHOOL</option>
+                <option value="1551">NORTHWESTERN MIDDLE SCHOOL</option>	
+                <option value="1561">YWLAYMLA</option>
+                <option value="1581">GEORGE WASHINGTON CARVER ELEM</option>
+                <option value="1611">BARTRAM SPRINGS ELEMENTARY</option>	
+                <option value="1651">WILLIAM M RAINES HIGH SCHOOL</option>	
+                <option value="1661">CARTER G WOODSON ELEM SCHOOL</option>	
+                <option value="1691">S A HULL ELEMENTARY SCHOOL</option>	
+                <option value="1811">HOSPITAL AND HOMEBOUND</option>	
+                <option value="1821">YOUTH DEVELOPMENT CENTER</option>
+                <option value="2051">PICKETT ELEMENTARY SCHOOL</option>	
+                <option value="2072">J E B STUART MIDDLE SCHOOL</option>	
+                <option value="2111">SOUTHSIDE MIDDLE SCHOOL</option>
+                <option value="2121">JEAN RIBAULT MIDDLE SCHOOL</option>	
+                <option value="2131">ARLINGTON MIDDLE SCHOOL</option>
+                <option value="2161">JEFFERSON DAVIS MIDDLE SCHOOL</option>
+                <option value="2191">JOSEPH STILWELL MIDDLE SCHOOL</option>
+                <option value="2211">NORMANDY VILLAGE ELEMENTARY SCHOOL</option>
+                <option value="2361">MAMIE AGNES JONES ELEMENTARY SCHOOL</option>	
+                <option value="2381">FORT CAROLINE MIDDLE SCHOOL</option>
+                <option value="2401">ARLINGTON HEIGHTS ELEMENTARY SCHOOL</option>	
+                <option value="2431">GREGORY DRIVE ELEMENTARY SCHOOL</option>	
+                <option value="2441">HIGHLANDS MIDDLE SCHOOL</option>	
+                <option value="2451">CROWN POINT ELEMENTARY SCHOOL</option>	
+                <option value="2481">EDWARD H WHITE HIGH SCHOOL</option>	
+                <option value="2501">PINE ESTATES ELEMENTARY SCHOOL</option>	
+                <option value="2531">TWIN LAKES ACADEMY MIDDLE</option>
+                <option value="2541">MAYPORT MIDDLE SCHOOL</option>
+                <option value="2551">ENTERPRISE LEARNING ACADEMY</option>
+                <option value="2561">LANDMARK MIDDLE SCHOOL</option>	
+                <option value="2591">MANDARIN MIDDLE SCHOOL</option>	
+                <option value="2621">ANDREW A ROBINSON ELEMENTARY SCHOOL</option>	
+                <option value="2651">FIRST COAST HIGH SCHOOL</option>
+                <option value="2681">ATLANTIC COAST HIGH SCHOOL</option>	
+                <option value="2691">BISCAYNE ELEMENTARY SCHOOL</option>	
+                <option value="2741">WESTVIEW K-8</option>	
+                <option value="2791">KERNAN MIDDLE SCHOOL</option>	
+                <option value="2801">FRANK H PETERSON ACADEMIES</option>	
+                <option value="2851">A PHILIP RANDOLPH ACADEMIES</option>
+                <option value="3518">MCKAY SCHOLARSHIPSCHOOL OF EN</option>
+                <option value="5421">BISCAYNE HIGH SCHOOL</option>
+                <option value="5611">BRIDGEPREP ACADEMY DUVAL COUNTY</option>
+                <option value="5631">SEASIDE CHARTER K-8 SCHOOL</option>	
+                <option value="N998">Home Education Setting</option>
             </select>
             <br><br>
           <?php echo 'Currently Displaying: '.$_POST['s_id'].' Student Data' ; ?>
