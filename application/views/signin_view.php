@@ -154,10 +154,10 @@ div {
                 <input type="text" name="username" placeholder="Enter Username">
                 <p>Password</p>
                 <input type="password" name="password" placeholder="Enter Password">
-                <input type="submit" name ="login" onclick="location.href='home'" value="Login">
+                <input type="submit" name ="login" onclick="location.href='index.php/home'" value="Login">
                 <br>
                 <?php if(isset($message)){echo $message;}?>
-                <button type="button" onclick="location.href='home'">Dashboard</button><br>
+                <button type="button" onclick="<?php echo base_url();?>/>Dashboard</button><br>
                 <!-- Create Account Placeholder
                 <br>
                 <br>

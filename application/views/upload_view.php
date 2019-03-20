@@ -39,9 +39,9 @@ if($PASSWORD) {
 // must be in UTF-8 or `basename` doesn't work
 setlocale(LC_ALL,'en_US.UTF-8');
 
-//chdir('C:\xampp\htdocs');
+chdir('C:\xampp\htdocs');
 //chdir('C:\xampp\htdocs\simsdemo\application\files');
-chdir('D:\home\site\wwwroot\application\files');
+//chdir('D:\home\site\wwwroot\application\files');
 
 
 $tmp_dir = dirname($_SERVER['SCRIPT_FILENAME']);
@@ -197,7 +197,7 @@ $MAX_UPLOAD_SIZE = min(asBytes(ini_get('post_max_size')), asBytes(ini_get('uploa
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
 <style>
-div.window{
+/*div.window{
 	width: 70%;
     border: 10px solid black;
     padding: 25px;
@@ -207,6 +207,7 @@ div.window{
 	overflow-y:scroll;
 	background-color: white:
 }
+*/
 body {font-family: "lucida grande","Segoe UI",Arial, sans-serif; font-size: 14px;width:1024;padding:1em;margin:0;background: url(loginBackground.jpg)}
 th {font-weight: normal; color: #1F75CC; background-color: #F0F9FF; padding:.5em 1em .5em .2em;
 	text-align: left;cursor:pointer;user-select: none;}
@@ -379,7 +380,8 @@ $(function(){
 				$row.find('.progress').css('width',(e.loaded/e.total*100 | 0)+'%' );
 			}
 		};
-	    xhr.send(fd);
+		xhr.send(fd);
+		alert("File Uploaded");
 	}
 	function renderFileUploadRow(file,folder) {
 		return $row = $('<div/>')
@@ -463,24 +465,24 @@ $(function(){
 	}
 })
 function myFunction(){
-	alert ("My Function Works");
+	var pswd = prompt("Please enter upload password.");
+	if (pswd != "cisjax"){
+		window.location.assign("http://cisjax.org");
+	} else {
+		document.getElementById("file_drop_target").style.display="inline";
+		document.getElementById("upload_button").style.display="none";
+	}
 }
+
+
 
 </script>
 </head>
 <center>
 <br>
 <br>
-<h1>File Manager</h1>
+<h1>Upload Files Here</h1>
 <br>
-<form method="post" action="load.php">
-	<button type="button" onclick="location.href='home'">Home</button>
-	<!-- <input type="text" id="svalue"> -->
-  <button type="button" onclick="location.href='main'">Dashboard</button>
-
-  <button type="button" onclick="alert('Feature Not Avaliable')">Account Manager</button>
-</form>
-  <br>
 
 
 
@@ -489,41 +491,20 @@ function myFunction(){
 <div class="window">
 
 <div id="top">
-   <?php if($allow_create_folder): ?>
-	<form action="?" method="post" id="mkdir" >
-		<label for=dirname>Create New Folder</label><input id=dirname type=text name=name value="" />
-		<input type="submit" value="create" />
-		<br>
-		<br>
-		<button onclick="myFunction()">Combine Files</button>
-	</form>
-	
-
-   <?php endif; ?>
+   
+	<div id="upload_button">
+<button onclick="myFunction()">Enter Upload Password</button>
+   </div>
    <?php if($allow_upload): ?>
 
-	<div id="file_drop_target">
+	<div id="file_drop_target" style="display:none">
 		Drag Files Here To Upload
 		<b>or</b>
 		<input type="file" multiple />
+
 	</div>
    <?php endif; ?>
 
-	<div id="breadcrumb">&nbsp;</div>
-<div id="upload_progress"></div>
 
-<table  id="table"><thead><tr>
-	<th>Name</th>
-	<th>Size</th>
-	<th>Modified</th>
-	<th>Permissions</th>
-	<th>Actions</th>
-</tr>
-</thead>
-<tbody class="wrap" id="list">
-</tbody>
-</table>
-
-</div>
-
+</center>
 </body></html>
