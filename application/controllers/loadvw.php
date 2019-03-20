@@ -5,7 +5,7 @@
         public function index()
         {
             $this->load->helper('url'); 
-            $this->load->view('load_view');
+            $this->load->view('load_vw');
         }
         
     }
