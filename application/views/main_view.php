@@ -88,7 +88,7 @@ processPageRequest();
           <div class="chart-stage">
             <!-- Put Drop Down Here -->
             <select name="s_id" style="width: 35%;">
-                <option value="0">Select Option</option>
+                <option value="0">All Schools</option>
                 <option value="0061">MATTIE V RUTHERFORD ALT ED CTR</option>
                 <option value="0141">GRAND PARK CAREER CENTER</option>
                 <option value="0151">BRENTWOOD ELEMENTARY SCHOOL</option>
