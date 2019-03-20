@@ -9,7 +9,7 @@ google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
 // Draw the chart and set the chart values
 var data = google.visualization.arrayToDataTable([
-  ["'.$field.'", "# of Students"],';
+  ["'.$topic.'", "# of Students"],';
   for($i=0;$i<count($arrayA);$i++)
   {
       if($i==(count($arrayA)-1))
@@ -21,9 +21,9 @@ var data = google.visualization.arrayToDataTable([
         echo '["'.$arrayA[$i].'", '.$arrayB[$i].'],';
       }
   }
-    echo 'var options = {"title":"# of Students per '.$field.'", "width":550, "height":400};
+    echo 'var options = {"title":"# of Students per '.$topic.'", "width":550, "height":400};
 
-  var chart = new google.visualization.PieChart(document.getElementById("piechart"));
+  var chart = new google.visualization.PieChart(document.getElementById("'.$field.'"));
   chart.draw(data, options);
 }
 </script>';
