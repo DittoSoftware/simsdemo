@@ -5,7 +5,7 @@ processPageRequest();
     function processPageRequest()
     {
         session_unset();
-        if($_POST['s_id'] != '')
+        if($_POST['s_id'] != "")
         {
           $school = $_POST['s_id'];
         }
