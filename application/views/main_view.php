@@ -169,7 +169,7 @@ processPageRequest();
                 <option value="N998">Home Education Setting</option>
             </select>
             <br><br>
-          <?php echo 'Currently Displaying: '.$_POST['s_id'].' Student Data' ; ?>
+          <?php echo "Currently Displaying: School #".$_POST['s_id']."'s Student Data" ; ?>
           </div>
           <div class="chart-notes">
           <br><br>
