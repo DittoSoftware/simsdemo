@@ -1,5 +1,6 @@
 <?php
 require('fieldCount.php');
+$_POST['s_id'] = "0";
 processPageRequest();
 
     function processPageRequest()
