@@ -132,10 +132,10 @@ if(isset($_POST["submit"])){
     // print_r($allData);
     //C:\xammp\htdocs\simsdemo\output.txt
 
-    $file = fopen("D:\home\site\wwwroot\files\output.txt", "w+");
+    $file = fopen("D:\home\site\wwwroot\output.txt", "w+");
     fwrite($file, "{ \"data\": ");
     fclose($file);
-    $data = fopen("D:\home\site\wwwroot\files\output.txt","a");  
+    $data = fopen("D:\home\site\wwwroot\output.txt","a");  
     fwrite($data, json_encode($allData, JSON_PRETTY_PRINT));
     fclose($data);
     $last = fopen("output.txt", "a");
