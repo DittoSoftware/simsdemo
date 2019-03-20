@@ -495,7 +495,6 @@ function myFunction(){
 		<input type="submit" value="create" />
 		<br>
 		<br>
-		<button onclick="myFunction()">Combine Files</button>
 	</form>
 	
 
