@@ -97,7 +97,7 @@ $selected = array();
 
 echo "<h3>Please Select Files to Merge</h3>
         <form  method='post'>
-        <table id='example' class='display' style='width:100%'>
+        <table id='example' class='display' style='width:70%'>
         <thead>
             <tr>
                 <th><input type='checkbox' onClick='selectall(this)' />Select All</th>
