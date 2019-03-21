@@ -1,9 +1,6 @@
 <?php
 require('fieldCount.php');
-if($_POST['s_id'] == '')
-{
-  $_POST['s_id'] = '0';
-}
+$_POST['s_id']= '0';
 ?>
 
 
