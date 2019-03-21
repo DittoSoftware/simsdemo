@@ -34,8 +34,8 @@
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
 		  <li><a href="https://cissimsdev.azurewebsites.net/index.php/main">Dashboard</a></li>
-		  <li><a href="location.href='filemanager'">File Manager</a></li>
-		  <li><a href="location.href='users'">Account Manager</a></li>
+		  <li><a href="https://cissimsdev.azurewebsites.net/index.php/filemanager">File Manager</a></li>
+		  <li><a href="https://cissimsdev.azurewebsites.net/index.php/users">Account Manager</a></li>
         </ul>
 	  </div>
     </div>
