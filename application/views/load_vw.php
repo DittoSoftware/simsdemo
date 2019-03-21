@@ -9,10 +9,34 @@
 <script src="<?php echo base_url(); ?>js/jquery.dataTables.min.js"></script> 
 <link rel="stylesheet" href="<?php echo base_url();?>CSS/jquery.dataTables.min.css">
 
+<link href="https://d26b395fwzu5fz.cloudfront.net/keen-dataviz-1.1.3.css" rel="stylesheet" />
+<script src="https://d26b395fwzu5fz.cloudfront.net/keen-dataviz-1.1.3.js" type="text/javascript"></script> 
 </head>
+<body class="keen-dashboard" style="padding-top: 80px;">
 
-
-<body>
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="navbar-brand">SIMS &raquo; File Merge</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+		  <li><a href="location.href='main'">Dashboard</a></li>
+		  <li><a href="location.href='filemanager'">File Manager</a></li>
+		  <li><a href="location.href='users'">Account Manager</a></li>
+        </ul>
+	  </div>
+    </div>
+  </div>
 <?php
 ini_set("memory_limit","512M");
 
