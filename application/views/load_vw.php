@@ -5,12 +5,14 @@
 <html>
 <head>
 <title>Student Data File Merge</title>
+<link href="https://d26b395fwzu5fz.cloudfront.net/keen-dataviz-1.1.3.css" rel="stylesheet" />
+<script src="https://d26b395fwzu5fz.cloudfront.net/keen-dataviz-1.1.3.js" type="text/javascript"></script> 	
+	
 <script src="<?php echo base_url(); ?>js/jquery-3.3.1.min.js"></script> 
 <script src="<?php echo base_url(); ?>js/jquery.dataTables.min.js"></script> 
 <link rel="stylesheet" href="<?php echo base_url();?>CSS/jquery.dataTables.min.css">
 
-<link href="https://d26b395fwzu5fz.cloudfront.net/keen-dataviz-1.1.3.css" rel="stylesheet" />
-<script src="https://d26b395fwzu5fz.cloudfront.net/keen-dataviz-1.1.3.js" type="text/javascript"></script> 
+
 </head>
 <body class="keen-dashboard" style="padding-top: 80px;">
 
