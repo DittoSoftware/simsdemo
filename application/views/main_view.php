@@ -71,7 +71,9 @@ processPageRequest();
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
-          <li><a href="location.href=\'home\'">Home</a></li>
+          <li><a href="https://cissimsdev.azurewebsites.net/index.php/filemanager">File Manager</a></li>
+		  <li><a href="https://cissimsdev.azurewebsites.net/index.php/loadvw">File Merge</a></li>
+		  <li><a href="https://cissimsdev.azurewebsites.net/index.php/users">Account Manager</a></li>
         </ul>
       </div>
     </div>
