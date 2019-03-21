@@ -1,20 +1,5 @@
 <?php
 require('fieldCount.php');
-processPageRequest();
-
-    function processPageRequest()
-    {
-        if($_POST['s_id'] != "")
-        {
-          $school = $_POST['s_id'];
-        }
-        else
-        {
-          $_POST['s_id'] = '0';
-        }
-      
-    }
-
 ?>
 
 
