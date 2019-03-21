@@ -24,7 +24,7 @@ if(isset($_POST['username'])){
         // exit();
         session_start();
         $_SESSION['username'] = $_POST['username'];
-        header('Location: home');
+        header('Location: main');
     }
     else{
 
