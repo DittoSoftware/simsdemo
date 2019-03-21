@@ -497,7 +497,7 @@ function myFunction(){
     </div>
   </div>
 
-<center><h2>File Manager</h2></center>
+<center><h1>File Manager</h1></center>
 
 <div class="window">
 
