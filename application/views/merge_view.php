@@ -10,18 +10,39 @@
 <script src="<?php echo base_url(); ?>js/buttons.html5.min.js"></script>
 <script src="<?php echo base_url(); ?>js/jszip.min.js"></script> 
 
-
-
-<!-- <script src="pdfmake.min.js"></script>  -->
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.js" ></script> -->
-<!-- <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>  -->
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>bootstrap/css/bootstrap.min.css">
+	<link href="https://d26b395fwzu5fz.cloudfront.net/keen-dataviz-1.1.3.css" rel="stylesheet" />
+  	<script src="https://d26b395fwzu5fz.cloudfront.net/keen-dataviz-1.1.3.js" type="text/javascript"></script> 
 
 <link rel="stylesheet" href="<?php echo base_url();?>CSS/buttons.dataTables.min.css">
 <link rel="stylesheet" href="<?php echo base_url();?>CSS/jquery.dataTables.min.css">
 </head>
+<body class="keen-dashboard" style="padding-top: 80px;">
 
-
-<body>
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="navbar-brand">SIMS &raquo; File Merge</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+		  <li><a href="https://cissimsdev.azurewebsites.net/index.php/main">Dashboard</a></li>
+		  <li><a href="https://cissimsdev.azurewebsites.net/index.php/filemanager">File Manager</a></li>
+		  <li><a href="https://cissimsdev.azurewebsites.net/index.php/users">Account Manager</a></li>
+        </ul>
+	  </div>
+    </div>
+  </div>
+<center><h1>Export Data</h1></center>
 <table id="example" class="display" style="width:100%">
         <thead>
             <tr>
