@@ -25,9 +25,9 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
-		  <li><a href="location.href='main'">Dashboard</a></li>
-		  <li><a href="location.href='filemanager'">File Manager</a></li>
-		  <li><a href="location.href='loadvw'">File Merge</a></li>
+		  <li><a href="<?php echo base_url();?>index.php/main">Dashboard</a></li>
+		  <li><a href="<?php echo base_url();?>index.php/filemanager">File Manager</a></li>
+		  <li><a href="<?php echo base_url();?>index.php/loadvw">File Merge</a></li>
         </ul>
 	  </div>
     </div>
