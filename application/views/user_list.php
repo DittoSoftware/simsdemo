@@ -36,7 +36,7 @@
 	<h1 class="page-header text-center">Account Manager</h1>
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
-			<a href="<?php echo base_url(); ?>index.php/users/addnew" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add New</a><br><br>
+			<a href="<?php echo base_url(); ?>index.php/users/addnew" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add User</a><br><br>
 			<table class="table table-bordered table-striped">
 				<thead>
 					<tr>
