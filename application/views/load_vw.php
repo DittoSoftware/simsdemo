@@ -95,7 +95,7 @@ for($i=0; $i < count($a); $i++){
 $selected = array();
 
 
-echo "<h3>Please Select Files to Merge</h3>
+echo "<center><h2>Select Files</h2></center>
         <form  method='post'>
         <table id='example' class='display' style='width:70%'>
         <thead>
