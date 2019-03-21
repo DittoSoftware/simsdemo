@@ -95,7 +95,7 @@ for($i=0; $i < count($a); $i++){
 $selected = array();
 
 
-echo "<center><h2>Select Files</h2></center>
+echo "<center><h1>Select Files</h1></center>
         <form  method='post'>
         <table id='example' class='display' style='width:70%'>
         <thead>
