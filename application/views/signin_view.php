@@ -20,14 +20,14 @@ if(isset($_POST['username'])){
         // exit();
         session_start();
         $_SESSION['username'] = $_POST['username'];
-        header('Location: users');
+        header('Location: main');
     }
     else{
 
         //echo "Unsuccessful Login";
 		$message = "Invalid Credentials";
 		echo "<script type='text/javascript'>alert('$message');</script>";
-		header('Location: log');
+		header('Location: signin');
         //exit();
     }
 
