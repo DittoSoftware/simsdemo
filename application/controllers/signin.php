@@ -12,7 +12,7 @@
             $this->load->helper('url'); 
             $this->load->view('login_view');
         }
-		public function logout(){
+	public function logout(){
             $this->load->driver('cache'); 
             $this->session->sess_destroy();
             $this->cache->clean(); 
