@@ -1,11 +1,11 @@
 <?php
     class Signin extends CI_Controller
     {	
-		function __construct(){
-			parent::__construct();
+	function __construct(){
+	    parent::__construct();
             $this->load->database();
             ob_start(); 
-		}
+	}
 
         public function index()
         {
