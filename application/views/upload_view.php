@@ -451,7 +451,7 @@ function myFunction(){
 			<div class="row content">
 			<div class="col-sm-2 sidenav">
 				<br>
-				<img class="logo" src="http://localhost/simsdemo/images/cisLogo.png" alt="logo">
+				<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
 			</div>	
 
 	<div class="container">
