@@ -90,7 +90,7 @@ if(!isset($_SESSION['username'])){
 <div class="col-sm-8 text-left">
 	<h2>Add Account</h2>
 	<div class="row">
-		<div class="col-sm-4 col-sm-offset-4">
+		
 			<h3>Add Form
 				<span class="pull-right"><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
 			</h3>
@@ -122,7 +122,7 @@ if(!isset($_SESSION['username'])){
 				</div>
 				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
 			</form>
-		</div>
+		
 		</div>
 	</div>
 </div>
