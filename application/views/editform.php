@@ -62,7 +62,7 @@ if(!isset($_SESSION['username'])){
 		</div>
 
 <div class="container">
-
+	<br>
 	<h2 class="text-left">Edit Account</h2>
 	<br>
 	<!-- <div class="row"> -->
