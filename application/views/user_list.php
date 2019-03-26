@@ -1,3 +1,8 @@
+<?php
+if(!isset($_SESSION['username'])){
+	header("Location: https://cissimsdev.azurewebsites.net/index.php/signin");
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,4 +1,7 @@
 <?php
+if(!isset($_SESSION['username'])){
+	header("Location: https://cissimsdev.azurewebsites.net/index.php/signin");
+}
 require('fieldCount.php');
 ?>
 
