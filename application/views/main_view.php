@@ -44,31 +44,35 @@ if(empty($_POST['s_id']))
   <!-- Dashboard -->
   <link rel="stylesheet" type="text/css" href="../../assets/css/keen-dashboards.css" />
 </head>
-<body class="keen-dashboard" style="padding-top: 80px;">
+<body>
 
-  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="navbar-brand">SIMS &raquo; Dashboard</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-left">
-          <li><a href="https://cissimsdev.azurewebsites.net/index.php/filemanager">File Manager</a></li>
-		  <li><a href="https://cissimsdev.azurewebsites.net/index.php/loadvw">File Merge</a></li>
-		  <li><a href="https://cissimsdev.azurewebsites.net/index.php/users">Account Manager</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			
+				<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link button1"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/main';">Dashboard</button></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link button2"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/loadvw';">File Merge</button></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link button3"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/users';">Account Manager</button></a>
+						</li>
+			
+					</ul>
+					<ul class="navbar-nav navbar-right">
+							<li class="nav-item">
+									<a class="nav-link logoutButton"><button type="button"  onclick="location.href='https://cissimsdev.azurewebsites.net/index.php/signin/logout';">Logout</button></a>
+							</li>
+					</ul>
+				</div>
+			
+			</nav>
   <form method="POST" action="main?action=s_id=">
   <div class="container-fluid">
     <div class="row">

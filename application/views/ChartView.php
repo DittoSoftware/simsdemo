@@ -26,6 +26,5 @@ var data = google.visualization.arrayToDataTable([
   var chart = new google.visualization.PieChart(document.getElementById("'.$field.'"));
   chart.draw(data, options);
 }
-</script>';
-
+</script>'
 ?>
