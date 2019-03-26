@@ -33,19 +33,13 @@ if(empty($_POST['s_id']))
   <!-- Demo Dependencies -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> <!--invoke jquery first then highcharts libraries when you use highcharts to draw the plot.-->
   <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
-  <script type="text/javascript" src="highcharts.js">
+  <script type="text/javascript" src="highcharts.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.3.2/holder.min.js" type="text/javascript"></script>
-  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-</script>
-      <script src = "https://code.highcharts.com/highcharts.js"></script>  
-      <script src = "https://code.highcharts.com/modules/drilldown.js"></script>  
-      <script src = "https://code.highcharts.com/modules/data.js"></script> 
-  
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-   
 </head>
 <body>
 
