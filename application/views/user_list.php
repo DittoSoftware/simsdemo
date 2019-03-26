@@ -87,6 +87,7 @@ if(!isset($_SESSION['username'])){
 
 		<div class="col-sm-8 text-left">
 			<!-- <a href="<?php echo base_url(); ?>index.php/users/addnew" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add User</a><br><br> -->
+			<br>
 			<h2 class="text-center">Account Manager</h2>
 			<a href="<?php echo base_url(); ?>index.php/users/addnew" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add User</a><br><br>
 
