@@ -92,7 +92,9 @@ if(!isset($_SESSION['username'])){
 	<div class="row">
 		
 			<h3>Add Form
-				<span class="pull-right"><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
+				<!-- <span class="pull-right"><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span> -->
+				<span><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
+
 			</h3>
 			<hr>
 			<form method="POST" action="<?php echo base_url(); ?>index.php/users/insert">
