@@ -16,7 +16,8 @@
             $this->load->driver('cache'); 
             $this->session->sess_destroy();
             $this->cache->clean(); 
-            redirect('signin'); 
+            // redirect('signin'); 
+            header("Location: https://cissimsdev.azurewebsites.net/index.php/signin");
             ob_clean();
         }
     }
