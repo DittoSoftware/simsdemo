@@ -86,10 +86,10 @@ if(!isset($_SESSION['username'])){
 		</div>
 
 <div class="container">
-<br>
-<div class="col-sm-8 text-left">
-	<h2>Add Account</h2>
-	<div class="row">
+	<br>
+	<div class="col-sm-8 text-left">
+			<h2>Add Account</h2>
+	<!-- <div class="row"> -->
 		
 			<h3>Add Form
 				<!-- <span class="pull-right"><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span> -->
@@ -125,7 +125,7 @@ if(!isset($_SESSION['username'])){
 				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
 			</form>
 		
-		</div>
+		<!-- </div> -->
 	</div>
 </div>
 </body>
