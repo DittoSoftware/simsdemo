@@ -79,7 +79,7 @@ if(!isset($_SESSION['username'])){
 	</nav>
 
 	<div class="container-fluid text-center">
-	<div class="row content">
+	<!-- <div class="row content"> -->
 		<div class="col-sm-2 sidenav">
 		<br>
 		<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
@@ -100,7 +100,7 @@ if(!isset($_SESSION['username'])){
 			<!-- </h3> -->
 			<span class="float-right"><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
 
-			<hr>
+		
 			<form method="POST" action="<?php echo base_url(); ?>index.php/users/insert">
 				<div class="form-group">
 					<label>Username:</label>
@@ -130,7 +130,7 @@ if(!isset($_SESSION['username'])){
 			</form>
 		
 		<!-- </div> -->
-	</div>
+	<!-- </div> -->
 </div>
 </body>
 </html>
