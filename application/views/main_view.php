@@ -5,7 +5,7 @@ if(!isset($_SESSION['username'])){
 require('fieldCount.php');
 if(empty($_POST['s_id']))
 {
-  $_POST['s_id'] = "0"
+  $_POST['s_id'] = "0";
 }
 ?>
 
