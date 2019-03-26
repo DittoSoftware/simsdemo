@@ -76,12 +76,19 @@ if(!isset($_SESSION['username'])){
 	  </div>
     </div>
   </div> -->
-<div class="container">
-	<h1 class="page-header text-center">Account Manager</h1>
-	<div class="row">
-		<div class="col-sm-8 col-sm-offset-2">
+<div class="container-fluid text center">
+	<div class="row content">
+		<div class="col-sm-2 sidenav">
+
+		<br>
+		<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
+		</div>
+
+
+		<div class="col-sm-8 text-left">
 			<a href="<?php echo base_url(); ?>index.php/users/addnew" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add User</a><br><br>
-			<table class="table table-bordered table-striped">
+			<h2 class="text-center">Account Manager</h2>
+			<table class="table table-bordered table-striped width=100% shadow p-3 mb-5 bg-white rounded">
 				<thead>
 					<tr>
 						<th>ID</th>
