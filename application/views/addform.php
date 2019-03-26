@@ -87,7 +87,7 @@ if(!isset($_SESSION['username'])){
 
 <div class="container">
 	<br>
-	<h2 class="text-left">Add Account</h2>
+	<h2 class="text-center">Add Account</h2>
 	<br>
 	<div class="col-sm-8 text-left">
 			<!-- <h2>Add Account</h2> -->
