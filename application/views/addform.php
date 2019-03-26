@@ -28,36 +28,13 @@ if(!isset($_SESSION['username'])){
 </head>
 <body class="keen-dashboard" style="padding-top: 80px;">
 
-  <!-- <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="navbar-brand">SIMS &raquo; Account Manager</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-left">
-		  <li><a href="location.href='main'">Dashboard</a></li>
-		  <li><a href="location.href='filemanager'">File Manager</a></li>
-		  <li><a href="location.href='loadvw'">File Merge</a></li>
-        </ul>
-	  </div>
-    </div>
-  </div> -->
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-	<span class="navbar-toggler-icon"></span>
-</button>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
 						<a class="nav-link button1"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/main';">Dashboard</button></a>
@@ -79,25 +56,18 @@ if(!isset($_SESSION['username'])){
 	</nav>
 
 	<div class="container-fluid text-center">
-	<div class="row content">
-		<div class="col-sm-2 sidenav">
-		<br>
-		<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
+		<div class="row content">
+			<div class="col-sm-2 sidenav">
+			<br>
+			<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
 		</div>
 
 <div class="container">
 	<br>
-	<h2 class="text-center">Add Account</h2>
+	<h2 class="text-left">Add Account</h2>
 	<br>
 	<div class="col-sm-8 text-left">
-			<!-- <h2>Add Account</h2> -->
-	<!-- <div class="row"> -->
-		
-			<!-- <h3>Add Form -->
-				<!-- <span class="pull-right"><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span> -->
-				<!-- <span><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span> -->
-
-			<!-- </h3> -->
+	
 			<span class="float-right"><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
 
 		
