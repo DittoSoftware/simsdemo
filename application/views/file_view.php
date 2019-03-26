@@ -1,4 +1,8 @@
 <?php
+if(!isset($_SESSION['username'])){
+	header("Location: https://cissimsdev.azurewebsites.net/index.php/signin");
+}
+
 /********************************
 Simple PHP File Manager
 Copyright John Campbell (jcampbell1)
