@@ -60,14 +60,16 @@ if(!isset($_SESSION['username'])){
 			<br>
 			<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
 		</div>
+
 <div class="container">
-	<h1 class="page-header text-center">Edit Account</h1>
-	<div class="row">
-		<div class="col-sm-4 col-sm-offset-4">
-			<h3>Edit Form
-				<span class="pull-right"><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
-			</h3>
-			<hr>
+
+	<h2 class="text-left">Edit Account</h2>
+	<br>
+	<!-- <div class="row"> -->
+		<div class="col-sm-8 text-left">
+			
+				<span class="float-right"><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
+		
 			<?php extract($user); ?>
 			<form method="POST" action="<?php echo base_url(); ?>index.php/users/update/<?php echo $id; ?>">
 				<div class="form-group">
@@ -96,7 +98,7 @@ if(!isset($_SESSION['username'])){
 				</div>
 				<button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Update</button>
 			</form>
-		</div>
+		<!-- </div> -->
 	</div>
 </div>
 </body>
