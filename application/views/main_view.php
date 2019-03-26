@@ -14,7 +14,7 @@ if(empty($_POST['s_id']))
 <html>
 <head>
   <meta charset="utf-8">
-  <title>SIMS &raquo; Dashboard</title>
+  <title>Dashboard</title>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 
 <!--Cached Boostrap CDN-->
@@ -27,18 +27,6 @@ if(empty($_POST['s_id']))
 
 		<!--<link rel="stylesheet" type="text/css" href="http://localhost/simsdemo/bootstrap/css/stylesheet.css"/>-->
 		<link rel="stylesheet" type="text/css" href="<?= base_url()?>/bootstrap/css/stylesheet.css"/>
-
-
-
-  <!-- Demo Dependencies -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> <!--invoke jquery first then highcharts libraries when you use highcharts to draw the plot.-->
-  <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
-  <script type="text/javascript" src="highcharts.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.3.2/holder.min.js" type="text/javascript"></script>
-  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
 </head>
 <body>
 
@@ -68,7 +56,7 @@ if(empty($_POST['s_id']))
 					</ul>
 				</div>
 			
-			</nav>
+</nav>
   <form method="POST" action="main?action=s_id=">
   <div class="container-fluid">
     <div class="row">
