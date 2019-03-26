@@ -77,16 +77,17 @@ if(!isset($_SESSION['username'])){
 				</ul>
 			</div>
 	</nav>
-	<div class="container-fluid text center">
-	<div class="row content">
-	<br>
-		<div class="col-sm-2 sidenav">
 
+	<div class="container-fluid text-center">
+	<div class="row content">
+		<div class="col-sm-2 sidenav">
 		<br>
 		<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
 		</div>
 
-<div class="container center text-center">
+<div class="container">
+<br>
+<div class="col-sm-8 text-left">
 	<h2>Add Account</h2>
 	<div class="row">
 		<div class="col-sm-4 col-sm-offset-4">
@@ -121,6 +122,7 @@ if(!isset($_SESSION['username'])){
 				</div>
 				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
 			</form>
+		</div>
 		</div>
 	</div>
 </div>
