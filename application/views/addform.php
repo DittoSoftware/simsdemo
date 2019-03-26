@@ -79,7 +79,7 @@ if(!isset($_SESSION['username'])){
 	</nav>
 
 	<div class="container-fluid text-center">
-	<!-- <div class="row content"> -->
+	<div class="row content">
 		<div class="col-sm-2 sidenav">
 		<br>
 		<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
@@ -87,7 +87,7 @@ if(!isset($_SESSION['username'])){
 
 <div class="container">
 	<br>
-	<h2 class="text-center">Add Account</h2>
+	<h2 class="text-left">Add Account</h2>
 	<br>
 	<div class="col-sm-8 text-left">
 			<!-- <h2>Add Account</h2> -->
@@ -102,11 +102,11 @@ if(!isset($_SESSION['username'])){
 
 		
 			<form method="POST" action="<?php echo base_url(); ?>index.php/users/insert">
-				<div class="form-group">
+				<div class="form-group width=50%">
 					<label>Username:</label>
-					<input type="text" class="form-control" name="username" width=50%>
+					<input type="text" class="form-control" name="username">
 				</div>
-				<div class="form-group">
+				<div class="form-group width=50%">
 					<label>Password:</label>
 					<input type="text" class="form-control" name="password">
 				</div>
@@ -130,7 +130,7 @@ if(!isset($_SESSION['username'])){
 			</form>
 		
 		<!-- </div> -->
-	<!-- </div> -->
+	</div>
 </div>
 </body>
 </html>
