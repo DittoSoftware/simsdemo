@@ -93,11 +93,13 @@ if(!isset($_SESSION['username'])){
 			<!-- <h2>Add Account</h2> -->
 	<!-- <div class="row"> -->
 		
-			<h3>Add Form
-				<span class="pull-right"><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
+			<!-- <h3>Add Form -->
+				<!-- <span class="pull-right"><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span> -->
 				<!-- <span><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span> -->
 
-			</h3>
+			<!-- </h3> -->
+			<span class="pull-right"><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
+
 			<hr>
 			<form method="POST" action="<?php echo base_url(); ?>index.php/users/insert">
 				<div class="form-group">
