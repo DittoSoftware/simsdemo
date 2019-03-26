@@ -87,7 +87,7 @@ if(!isset($_SESSION['username'])){
 
 <div class="container">
 	<br>
-	<h2>Add Account</h2>
+	<h2 class="text-center">Add Account</h2>
 	<br>
 	<div class="col-sm-8 text-left">
 			<!-- <h2>Add Account</h2> -->
@@ -98,7 +98,7 @@ if(!isset($_SESSION['username'])){
 				<!-- <span><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span> -->
 
 			<!-- </h3> -->
-			<span class="pull-right"><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
+			<span class="float-right"><a href="<?php echo base_url(); ?>index.php/users" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
 
 			<hr>
 			<form method="POST" action="<?php echo base_url(); ?>index.php/users/insert">
