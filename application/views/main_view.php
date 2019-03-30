@@ -57,6 +57,12 @@ if(empty($_POST['s_id']))
 				</div>
 			
 </nav>
+<div class="container-fluid text-center">
+  <div class="row content">
+  <div class="col-sm-2 sidenav">
+    <br>
+		<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
+      </div>
   <form method="POST" action="main?action=s_id=">
   <div class="container-fluid">
     <div class="row">
@@ -262,5 +268,7 @@ if(empty($_POST['s_id']))
    
   </script>
 </form>
+    </div>
+    </div>
 </body>
 </html>
