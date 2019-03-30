@@ -59,7 +59,7 @@ if(isset($_POST['username'])){
 
     <div class="col-sm-2 sidenav">
                     <br><br><br>
-                    <p class="signInText">Communities In Scools<p>
+                    <img class="logo" src="<?= base_url()?>/images/textOnlyLogo.png" alt="logo">
                     <br>
                     <p class="quote">It's relationships, not programs, that change children</p>
                   </div>
