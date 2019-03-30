@@ -167,7 +167,7 @@ if(empty($_POST['s_id']))
                 Grade Level
               </div>
               <div class="chart-stage">
-              <div id="piechart"></div>';
+              <div id="piechart"></div>
               <?php $field = "piechart";
                     $topic = "Grade Level";
                     $school = $_POST['s_id']; 
