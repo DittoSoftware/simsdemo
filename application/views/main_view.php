@@ -199,7 +199,7 @@ if(empty($_POST['s_id']))
                 Diversity
               </div>
               <div class="chart-stage">
-              <div id="piechart2"></div>';
+              <div id="piechart2"></div>
               <?php $field = "piechart2"; 
                     $topic = "Race";
                     $school = $_POST['s_id'];
@@ -233,7 +233,7 @@ if(empty($_POST['s_id']))
                 Gender
               </div>
               <div class="chart-stage">
-              <div id="piechart3"></div>';
+              <div id="piechart3"></div>
               <?php $field = "piechart3"; 
                     $topic = "Gender";
                     $school = $_POST['s_id']; 
