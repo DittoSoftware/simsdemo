@@ -87,7 +87,7 @@ if(!isset($_SESSION['username'])){
 				</div>
 		</nav>
 
-<div class="col-sm-8 text-left">
+
 
 <?php
 ini_set("memory_limit","512M");
@@ -249,7 +249,7 @@ $(document).ready(function() {
 } );
 
 </script>
-</div>
+
 </body>
 </html>
 
