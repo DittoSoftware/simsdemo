@@ -162,13 +162,8 @@ for($j=0; $j < count($a); $j++){
 
 }
 
-//echo "    </tr></tbody><p><input type='submit' name='submit' value='Merge Files'/></p></form>";
+echo "    </tr></tbody><p><input type='submit' name='submit' value='Merge Files'/></p></form>";
 
-echo "    <div class='col-sm-2 sidenav'>
-<div class='well'>
-  </tr></tbody><p><input type='submit' name='submit' value='Merge Files'/></p></form>
-  </div>
-  </div>";
 
 if(isset($_POST["submit"])){
   if(!empty($_POST["combine"])){
