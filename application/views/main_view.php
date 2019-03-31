@@ -49,7 +49,12 @@
       </nav>
          <div class="container-fluid text center">
          <div class="row content">
-      <form method="POST" action="main?action=s_id=">
+            <div class="col-sm-2 sidenav">
+              <br>
+              <img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
+            </div>
+           
+          <form method="POST" action="main?action=s_id=">
             <div class="col-sm-9">
                <div class="chart-wrapper well">
                   <div class="chart-title">
@@ -284,6 +289,7 @@
                   </div>
                </div>
             </div>
+                                </div>
          </div>
          <script language = "JavaScript"></script>
       </form>
