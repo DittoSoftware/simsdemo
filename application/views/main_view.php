@@ -58,17 +58,17 @@ if(empty($_POST['s_id']))
 			
 </nav>
 <div class="container-fluid text-center">
-  <div class="row content">
+  
   <div class="col-sm-2 sidenav">
     <br>
 		<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
-</div>
+
 </div>
   <form method="POST" action="main?action=s_id=">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-3">
-        <div class="chart-wrapper">
+      <div class="col-sm-9">
+        <div class="chart-wrapper well">
           <div class="chart-title">
             Display Option<br><br>
           </div>
