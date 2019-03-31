@@ -22,9 +22,10 @@ if(!isset($_SESSION['username'])){
 
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>bootstrap/css/stylesheet.css">
 
-
+<!--
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>bootstrap/css/bootstrap.min.css">	
 <link href="https://d26b395fwzu5fz.cloudfront.net/keen-dataviz-1.1.3.css" rel="stylesheet" />
+-->
 <script src="https://d26b395fwzu5fz.cloudfront.net/keen-dataviz-1.1.3.js" type="text/javascript"></script> 	
 	
 <script src="<?php echo base_url(); ?>js/jquery-3.3.1.min.js"></script> 
@@ -85,7 +86,6 @@ if(!isset($_SESSION['username'])){
 					</ul>
 				</div>
 		</nav>
-
 
 <?php
 ini_set("memory_limit","512M");
