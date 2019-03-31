@@ -72,10 +72,10 @@ if(!isset($_SESSION['username'])){
 							<a class="nav-link button1"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/main';">Dashboard</button></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link button2"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/loadvw';">File Merge</button></a>
+							<a class="nav-link button2"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/filemanager';">File manager</button></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link button3"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/filemanager';">File Manager</button></a>
+							<a class="nav-link button3"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/users';">Account Manager</button></a>
 						</li>
 			
 					</ul>
@@ -86,6 +86,8 @@ if(!isset($_SESSION['username'])){
 					</ul>
 				</div>
 		</nav>
+
+<div class="col-sm-8 text-left">
 
 <?php
 ini_set("memory_limit","512M");
@@ -246,6 +248,7 @@ $(document).ready(function() {
 } );
 
 </script>
+</div>
 </body>
 </html>
 
