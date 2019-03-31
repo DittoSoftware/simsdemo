@@ -62,8 +62,8 @@ if(empty($_POST['s_id']))
   <div class="col-sm-2 sidenav">
     <br>
 		<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
-</div>
-</div>
+
+
   <form method="POST" action="main?action=s_id=">
   <div class="container-fluid">
     <div class="row">
@@ -163,6 +163,7 @@ if(empty($_POST['s_id']))
           <div class="chart-notes">
           <br><br>
           <button type="submit">Update Charts</button>
+</div>
           </div>
         </div>
       </div>
@@ -266,6 +267,7 @@ if(empty($_POST['s_id']))
           </div>
     </div>
   </div>
+                  </div>
                   </div>
   <script language = "JavaScript">
    
