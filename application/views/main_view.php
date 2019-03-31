@@ -47,9 +47,9 @@
             </ul>
          </div>
       </nav>
+         <div class="container-fluid text center">
+         <div class="row content">
       <form method="POST" action="main?action=s_id=">
-         <div class="container-fluid">
-         <div class="row">
             <div class="col-sm-9">
                <div class="chart-wrapper well">
                   <div class="chart-title">
