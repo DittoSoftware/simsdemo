@@ -158,6 +158,9 @@ if(empty($_POST['s_id']))
           <div class="chart-notes">
           <br><br>
           <button type="submit">Update Charts</button>
+</div>
+</div>
+</div>
           </div>
         </div>
       </div>
