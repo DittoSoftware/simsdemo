@@ -58,7 +58,7 @@ if(isset($_POST['username'])){
     <body background="<?= base_url()?>/images/loginBackground.jpg">
 
     <div class="col-sm-2 sidenav">
-                    <br><br><br>
+                    <br><br>
                     <img class="logo" src="<?= base_url()?>/images/textOnlyLogo.png" alt="logo">
                     <br>
                     <p class="quote">It's relationships, not programs, that change children</p>
