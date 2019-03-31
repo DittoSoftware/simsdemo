@@ -457,45 +457,43 @@ function myFunction(){
 			</nav>
 
 			<div class="container-fluid text-center">
-				<div class="row content">
-					<div class="col-sm-2 sidenav">
+			<div class="row content">
+			<div class="col-sm-2 sidenav">
 				<br>
 				<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
 				
+				<br>
+
+				<?php if($allow_upload): ?>
+				<div id="file_drop_target">
+					Drag Files Here To Upload
+					<b>or</b>
+					<input type="file" multiple />
+					
 					</div>
+					<?php endif; ?>
+
+					<br>
+				<div id="top">
+   					<?php if($allow_create_folder): ?>
+						<form action="?" method="post" id="mkdir" >
+						<label for=dirname>Create New Folder</label><input id=dirname type=text name=name value="" />
+						<input type="submit" value="create" />
+						<br>
+						<br>
+						</form>
+				</div>
+
+   <?php endif; ?>
+					
+			</div>
+
+			<div id="upload_progress"></div>
+
+
 <div class="col-sm-8 text-left">    
 	<br>
 	<h2 class="text-center">File Manager</h2>
-	<br>
-
-<?php if($allow_upload): ?>
-<div id="file_drop_target">
-	Drag Files Here To Upload
-	<b>or</b>
-	<input type="file" multiple />
-	
-	</div>
-	<?php endif; ?>
-
-	<br>
-<div id="top">
-	   <?php if($allow_create_folder): ?>
-		<form action="?" method="post" id="mkdir" >
-		<label for=dirname>Create New Folder</label><input id=dirname type=text name=name value="" />
-		<input type="submit" value="create" />
-		<br>
-		<br>
-		</form>
-</div>
-
-<?php endif; ?>
-	
-</div>
-
-<div id="upload_progress"></div>
-
-
-
     <table class="table table-bordered table-striped width=100% shadow p-3 mb-5 bg-white rounded">
         <!-- <h2 class="text-center">File Manager</h2> -->
 	<thead>
