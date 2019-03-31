@@ -191,7 +191,7 @@
                </div>
             </div>
          </div>
-         <div class="col-sm-9">
+         <div class="col-sm-8 text-left">
             <div class="row">
                <div class="col-sm-4">
                   <div class="chart-wrapper">
