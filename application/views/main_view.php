@@ -59,7 +59,7 @@ if(empty($_POST['s_id']))
 </nav>
 <div class="container-fluid text-center">
   <div class="row content">
-  <div class="col-sm-2 sidenav">
+    <div class="col-sm-2 sidenav">
     <br>
 		<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
 
@@ -163,6 +163,8 @@ if(empty($_POST['s_id']))
           <div class="chart-notes">
           <br><br>
           <button type="submit">Update Charts</button>
+</div>
+</div>
 </div>
           </div>
         </div>
