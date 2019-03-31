@@ -47,12 +47,15 @@
             </ul>
          </div>
       </nav>
-         <div class="container-fluid text center">
-         <div class="row content">
-            <div class="col-sm-2 sidenav">
+
+      <div class="col-sm-2 sidenav">
               <br>
               <img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
             </div>
+            
+         <div class="container-fluid text center">
+         <div class="row content">
+            
            
           <form method="POST" action="main?action=s_id=">
             <div class="col-sm-9">
