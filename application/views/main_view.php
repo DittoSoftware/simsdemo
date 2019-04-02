@@ -58,13 +58,8 @@
             
            
           <form method="POST" action="main?action=s_id=">
-            <div class="col-sm-9">
-               <div class="chart-wrapper well">
-                  <div class="chart-title">
-                     Display Option<br><br>
-                  </div>
                   Select School Demographics:
-                  <div class="chart-stage">
+                  <div class="cardBody">
                      <!-- Put Drop Down Here -->
                      <select name="s_id" style="width: 35%;">
                         <option value="0">All Schools</option>
@@ -186,22 +181,12 @@
                      </select>
                      <br><br>
                      <?php echo "Currently Displaying: School #".$_POST['s_id']."'s Student Data" ; ?>
-                  </div>
-                  <div class="chart-notes">
+                     </div>
                      <br><br>
                      <button type="submit">Update Charts</button>
-                  </div>
                </div>
             </div>
-         </div>
-         <div class="col-sm-8 text-left">
-            <div class="row">
-               <div class="col-sm-4">
-                  <div class="chart-wrapper">
-                     <div class="chart-title">
-                        Grade Level
-                     </div>
-                     <div class="cardBody">
+               <div class="cardBody">
                         <div id="piechart"></div>
                         <?php $field = "piechart";
                            $topic = "Grade Level";
@@ -222,10 +207,6 @@
                            $i++;
                            } 
                            include 'ChartView.php'; ?>
-                     </div>
-                     <div class="chart-notes">
-                     </div>
-                  </div>
                </div>
                <div class="col-sm-4">
                   <div class="chart-wrapper">
@@ -254,18 +235,10 @@
                            } 
                            include 'ChartView.php'; ?>
                      </div>
-                     <div class="chart-notes">
-                     </div>
+                    
                   </div>
                </div>
-               <div class="col-sm-9">
-                  <div class="row">
-                     <div class="col-sm-4">
-                        <div class="chart-wrapper">
-                           <div class="chart-title">
-                              Gender
-                           </div>
-                           <div class="cardBody">
+                                 <div class="cardBody">
                               <div id="piechart3"></div>
                               <?php $field = "piechart3"; 
                                  $topic = "Gender";
@@ -292,7 +265,7 @@
                   </div>
                </div>
             </div>
-                                </div>
+            </div>
          </div>
          <script language = "JavaScript"></script>
       </form>
