@@ -51,12 +51,11 @@
       <div class="col-sm-2 sidenav">
               <br>
               <img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
+              <br><br>
             </div>
             
          <div class="container-fluid text center">
-         <div class="row content">
-            
-           
+         <div class="row content"> 
           <form method="POST" action="main?action=s_id=">
                   Select School Demographics:
                   <div class="cardBody">
@@ -208,11 +207,6 @@
                            } 
                            include 'ChartView.php'; ?>
                </div>
-               <div class="col-sm-4">
-                  <div class="chart-wrapper">
-                     <div class="chart-title">
-                        Diversity
-                     </div>
                      <div class="cardBody">
                         <div id="piechart2"></div>
                         <?php $field = "piechart2"; 
