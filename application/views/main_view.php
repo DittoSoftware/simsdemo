@@ -229,10 +229,9 @@
                            } 
                            include 'ChartView.php'; ?>
                      </div>
-                    
-                  </div>
-               </div>
-                                 <div class="cardBody">
+                     </div>
+                     </div>
+                              <div class="cardBody">
                               <div id="piechart3"></div>
                               <?php $field = "piechart3"; 
                                  $topic = "Gender";
