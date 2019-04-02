@@ -201,7 +201,7 @@
                      <div class="chart-title">
                         Grade Level
                      </div>
-                     <div class="chart-stage">
+                     <div class="cardBody">
                         <div id="piechart"></div>
                         <?php $field = "piechart";
                            $topic = "Grade Level";
@@ -232,7 +232,7 @@
                      <div class="chart-title">
                         Diversity
                      </div>
-                     <div class="chart-stage">
+                     <div class="cardBody">
                         <div id="piechart2"></div>
                         <?php $field = "piechart2"; 
                            $topic = "Race";
@@ -265,7 +265,7 @@
                            <div class="chart-title">
                               Gender
                            </div>
-                           <div class="chart-stage">
+                           <div class="cardBody">
                               <div id="piechart3"></div>
                               <?php $field = "piechart3"; 
                                  $topic = "Gender";
