@@ -221,9 +221,12 @@
                            } 
                            include 'ChartView.php'; ?>
                            </div>
-               </div>
+               
                         </div>
-                     <div class="cardBody">
+                        <!--card-->
+                        <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                           <div class="card-body">
+                              <h4 class="card-title text-center">Race</h4>
                         <div id="piechart2"></div>
                         <?php $field = "piechart2"; 
                            $topic = "Race";
@@ -245,6 +248,7 @@
                            } 
                            include 'ChartView.php'; ?>
                      </div>
+                        </div>
                               <div class="cardBody">
                               <div id="piechart3"></div>
                               <?php $field = "piechart3"; 
