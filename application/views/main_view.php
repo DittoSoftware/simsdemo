@@ -221,7 +221,7 @@
                            } 
                            include 'ChartView.php'; ?>
                            </div>
-                        
+                        </div>
                         </div>
                         <!--card-->
                         <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
@@ -248,7 +248,7 @@
                            } 
                            include 'ChartView.php'; ?>
                      </div>
-                        
+                        </div>
                         </div>
                               <!--Card-->
                               <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
@@ -274,6 +274,7 @@
                                  $i++;
                                  } 
                                  include 'ChartView.php'; ?>
+                              </div>
                               </div>
                               </div>
                               </div>
