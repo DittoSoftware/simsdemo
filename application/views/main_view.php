@@ -189,7 +189,7 @@
         <div class="col-sm-8 text-left">
                   <br>
                   <h2 class="text-center">Dashboard</h2>
-                  <div class="card-deck center-align width=100%">
+                  <div class="card-deck center-align">
                      <div class="row">
                         <!--card-->
                         <div class="card mb-4 shadow p-3 mb-5 bg-white rounded width=100%">
