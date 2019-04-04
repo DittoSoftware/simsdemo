@@ -195,6 +195,10 @@
                      <?php echo "Currently Displaying: ".$_POST['p_id']."'s Student Data" ; ?>
                      <br><br>
                      <button type="submit">Update Charts</button>
+                     <button onclick="myFunction()">Try it</button>
+                     <p id="demo"></p>
+
+<script>
                     
             </div>
         
@@ -294,7 +298,12 @@
                               </div>
                               </div>
                
-         <script language = "JavaScript"></script>
+         <script language = "JavaScript">
+         function myFunction() {
+         var x = document.getElementsByName("p_id")[0].value;
+         document.getElementById("demo").innerHTML = x;
+         }
+</script>
       </form>
    </body>
 </html>
