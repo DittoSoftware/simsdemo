@@ -47,7 +47,8 @@
             </ul>
          </div>
       </nav>
-
+      <div class="container-fluid text-center">    
+      <div class="row content">
       <div class="col-sm-2 sidenav">
               <br>
               <img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
@@ -55,7 +56,7 @@
             
             
          
-         <div row content>
+         
           <form method="POST" action="main?action=s_id=">
                   Select School Demographics:
                   <div class="cardBody">
@@ -254,7 +255,8 @@
                                  include 'ChartView.php'; ?>
                            </div>
                         </div>
-                     
+                              </div>
+                              </div>
                   
                
          <script language = "JavaScript"></script>
