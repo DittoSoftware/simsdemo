@@ -192,11 +192,10 @@
                      <option value="SEP">Student Enrichment Division</option>
                      </select>
                      <?php echo "Currently Displaying: School #".$_POST['s_id']."'s Student Data" ; ?>
-                     <?php echo "Currently Displaying: ".$_POST['p_id']."'s Student Data" ; ?>
+                      Currently Displaying: <p id="demo"></p> Student Data
                      <br><br>
                      <button type="submit">Update Charts</button>
                      <button onclick="myFunction()">Try it</button>
-                     <p id="demo"></p>
 
 <script>
                     
