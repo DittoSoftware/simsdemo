@@ -187,7 +187,7 @@
                      <button type="submit">Update Charts</button>
                     
             </div>
-        </div>
+        
         <!--Card deck-->
         <div class="col-sm-8 text-left centered">
            
@@ -197,7 +197,7 @@
                   <div class="card-deck center-align">
                      <div class="row">
                         <!--card-->
-                        <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                        <div class="card align-items-center mb-4 shadow p-3 mb-5 bg-white rounded">
                            <div class="card-body center">
                               <h4 class="card-title text-center">Grade Level</h4>
                         <div id="piechart"></div>
