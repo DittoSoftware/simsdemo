@@ -21,7 +21,7 @@ var data = google.visualization.arrayToDataTable([
         echo '["'.$arrayA[$i].'", '.$arrayB[$i].'],';
       }
   }
-    echo 'var options = {"title":"# of Students per '.$topic.'", "width":550, "height":400, "chartArea": {"width": "100%", "height": "80%"},
+    echo 'var options = {"title":"# of Students per '.$topic.'", "width":400, "height":550, "chartArea": {"width": "100%", "height": "80%"},
     "legend": {"position": "bottom"}};
 
   var chart = new google.visualization.PieChart(document.getElementById("'.$field.'"));
