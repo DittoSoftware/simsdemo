@@ -191,7 +191,7 @@
         <!--Card deck-->
         <div class="col-sm-8 text-left">
            <div class="row">
-               
+               <div class="cardBody">
                   <br>
                   <h2 class="text-center">Dashboard</h2>
                   <div class="card-deck">
@@ -248,7 +248,7 @@
                            } 
                            include 'ChartView.php'; ?>
                      </div>
-                        
+                        </div>
                         </div>
                               <!--Card-->
                               <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
@@ -277,7 +277,8 @@
                               </div>
                               </div>
                               </div>
-                              
+                              </div>
+                              </div>
                               </div>
                            </div>
                         </div>

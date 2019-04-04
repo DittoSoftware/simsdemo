@@ -81,7 +81,8 @@ option{
       -ms-transform: scale(1.05);
           transform: scale(1.05);
 }
-svg > i > i:last-child { pointer-events: none }
+svg > g > g:last-child { pointer-events: none }
+div.google-visualization-tooltip { pointer-events: none }
 
 
 .no_write #mkdir, .no_write #file_drop_target {display: none}
