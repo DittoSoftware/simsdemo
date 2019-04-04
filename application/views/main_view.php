@@ -47,7 +47,7 @@
             </ul>
          </div>
       </nav>
-
+      <p>Changes!<p>
       <div class="container-fluid text-left">    
       <div class="row content">
       <div class="col-sm-2 sidenav">
@@ -195,14 +195,14 @@
             </div>
         
         <!--Card deck-->
-        <div class="col-sm-8 text-left">
+        <div class="col-sm-9 text-left">
                   <br>
                   <h2 class="text-center">Dashboard</h2>
                   <div class="card-deck center-align">
                      <div class="row">
                         <!--card-->
                         <div class="card mb-4 shadow p-3 mb-5 bg-white rounded width=100%">
-                           <div class="card-body center">
+                           <div class="card-body center padding=50px">
                               <h4 class="card-title text-center">Grade Level</h4>
                         <div id="piechart"></div>
                         <?php $field = "piechart";

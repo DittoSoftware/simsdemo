@@ -81,6 +81,11 @@ option{
       -ms-transform: scale(1.05);
           transform: scale(1.05);
 }
+
+#piechart{
+    padding: 20px;
+}
+
 svg > i > i:last-child { pointer-events: none }
 div.google-visualization-tooltip { pointer-events: none }
 
