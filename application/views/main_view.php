@@ -52,7 +52,7 @@
               <br>
               <img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
               <br><br>
-            </div>
+      </div>
             
          <div class="container-fluid text center">
          <div class="row content"> 
@@ -185,6 +185,7 @@
                      <button type="submit">Update Charts</button>
                </div>
             </div>
+            <div class="col-sm-8 text-left"> 
                <div class="cardBody">
                         <div id="piechart"></div>
                         <?php $field = "piechart";
@@ -253,6 +254,7 @@
                                  } 
                                  include 'ChartView.php'; ?>
                            </div>
+                              </div>
                         </div>
                      </div>
                   </div>
