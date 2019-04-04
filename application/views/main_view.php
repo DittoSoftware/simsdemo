@@ -60,7 +60,7 @@
          
           <form method="POST" action="main?action=s_id=">
                   Select School Demographics:
-                  <div class="cardBody">
+                  
                      <!-- Put Drop Down Here -->
                      <select name="s_id" style="width: 100%;">
                         <option value="0">All Schools</option>
@@ -182,7 +182,7 @@
                      </select>
                      <br><br>
                      <?php echo "Currently Displaying: School #".$_POST['s_id']."'s Student Data" ; ?>
-                     </div>
+                     
                      <br><br>
                      <button type="submit">Update Charts</button>
                     
