@@ -64,7 +64,7 @@
                   
                      <!-- Put Drop Down Here -->
                      <select name="s_id" style="width: 100%;">
-                        <option value="0">All Schools</option>
+                        <option value="0" selected>All Schools</option>
                         <option value="0061">MATTIE V RUTHERFORD ALT ED CTR</option>
                         <option value="0141">GRAND PARK CAREER CENTER</option>
                         <!-- Works minus Diversity-->
@@ -183,7 +183,7 @@
                      </select>
                      <br><br>
                      <select name="p_id" style="width: 100%;">
-                     <option value="0">All Programs</option>
+                     <option value="0" selected>All Programs</option>
                      <option value="AFL">AFL Division</option>
                      <option value="After_School">Afterschool Division</option>
                      <option value="AmeriCorps">AmeriCorps (Literacy) Division</option>
@@ -193,7 +193,6 @@
                      </select>
                      <?php echo "Currently Displaying: School #".$_POST['s_id']."'s Student Data" ; ?>
                       Currently Displaying: <p id="demo"></p> Student Data
-                     <br><br>
                      <button type="submit">Update Charts</button>
                      <button onclick="myFunction()">Try it</button>
 
