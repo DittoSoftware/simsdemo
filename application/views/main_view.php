@@ -7,6 +7,10 @@
    {
      $_POST['s_id'] = "0";
    }
+   if(empty($_POST['p_id']))
+   {
+     $_POST['p_id'] = "0";
+   }
    ?>
 <!DOCTYPE html>
 <html>
