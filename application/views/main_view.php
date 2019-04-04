@@ -191,8 +191,8 @@
                      <option value="Gear_Up">Gear Up</option>
                      <option value="SEP">Student Enrichment Division</option>
                      </select>
-                     <?php echo "Currently Displaying: School #".$_POST['s_id'].name."'s Student Data" ; ?>
-                     <?php echo "Currently Displaying: ".$_POST['p_id'].name."'s Student Data" ; ?>
+                     <?php echo "Currently Displaying: School #".$_POST['s_id']."'s Student Data" ; ?>
+                     <?php echo "Currently Displaying: ".$_POST['p_id']."'s Student Data" ; ?>
                      <br><br>
                      <button type="submit">Update Charts</button>
                     
