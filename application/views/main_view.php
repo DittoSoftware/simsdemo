@@ -47,7 +47,7 @@
             </ul>
          </div>
       </nav>
-      <p>Changes!!</p>
+
       <div class="container-fluid text-center">    
       <div class="row content">
       <div class="col-sm-2 sidenav">
@@ -189,12 +189,12 @@
             </div>
         </div>
         <!--Card deck-->
-        <div class="col-sm-8 text-left">
+        <div class="col-sm-8 text-left centered">
            
                
                   <br>
                   <h2 class="text-center">Dashboard</h2>
-                  <div class="card-deck">
+                  <div class="card-deck center-align">
                      <div class="row">
                         <!--card-->
                         <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
