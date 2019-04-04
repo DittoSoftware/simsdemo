@@ -43,9 +43,9 @@ if($PASSWORD) {
 // must be in UTF-8 or `basename` doesn't work
 setlocale(LC_ALL,'en_US.UTF-8');
 
-//chdir('C:\xampp\htdocs');
+chdir('C:\xampp\htdocs');
 //chdir('C:\xampp\htdocs\simsdemo\application\files');
-chdir('D:\home\site\wwwroot\application\files');
+//chdir('D:\home\site\wwwroot\application\files');
 
 
 $tmp_dir = dirname($_SERVER['SCRIPT_FILENAME']);
@@ -202,7 +202,7 @@ $MAX_UPLOAD_SIZE = min(asBytes(ini_get('post_max_size')), asBytes(ini_get('uploa
 
 <!--Cached Boostrap CDN-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
 
     <!--Cached jQuery CDN-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -505,7 +505,7 @@ function myFunction(){
 	<th>Actions</th>
 </tr>
 </thead>
-<tbody class="wrap" id="list">
+<tbody id="list">
 </tbody>
 </table>
 
