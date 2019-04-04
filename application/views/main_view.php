@@ -188,9 +188,18 @@
                     </form>
             </div>
         </div>
-        <div class="col-sm-8 text-center">
-           <div class="row">
+        <!--Card deck-->
+        <div class="col-sm-8 text-left">
+           
                <div class="cardBody">
+                  <br>
+                  <h2 class="text-center">Dashboard</h2>
+                  <div class="card-deck">
+                     <div class="row">
+                        <!--card-->
+                        <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                           <div class="card-body">
+                              <h4 class="card-title text-center">Grade Level</h4>
                         <div id="piechart"></div>
                         <?php $field = "piechart";
                            $topic = "Grade Level";
@@ -211,7 +220,9 @@
                            $i++;
                            } 
                            include 'ChartView.php'; ?>
+                           </div>
                </div>
+                        </div>
                      <div class="cardBody">
                         <div id="piechart2"></div>
                         <?php $field = "piechart2"; 
@@ -257,6 +268,7 @@
                                  include 'ChartView.php'; ?>
                            </div>
                         </div>
+                              </div>
                               </div>
                               </div>
                               </div>
