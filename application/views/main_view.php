@@ -193,7 +193,7 @@
                      <div class="row">
                         <!--card-->
                         <div class="card mb-4 shadow p-3 mb-5 bg-white rounded width=100%">
-                           <div class="card-body align-items-center d-flex justify-content-center">
+                           <div class="card-body center">
                               <h4 class="card-title text-center">Grade Level</h4>
                         <div id="piechart"></div>
                         <?php $field = "piechart";
