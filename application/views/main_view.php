@@ -51,7 +51,7 @@
             </ul>
          </div>
       </nav>
-      <p>Changes!!<p>
+   
       <div class="container-fluid text-left">    
       <div class="row content">
       <div class="col-sm-2 sidenav">
