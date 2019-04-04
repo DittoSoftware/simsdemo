@@ -47,7 +47,7 @@
             </ul>
          </div>
       </nav>
-      <p>Changes!</p>
+      <p>Changes!!</p>
       <div class="container-fluid text-center">    
       <div class="row content">
       <div class="col-sm-2 sidenav">
@@ -188,7 +188,8 @@
                     </form>
             </div>
         </div>
-        <div class="col-sm-8 text-left">
+        <div class="col-sm-8 text-center">
+           <div class="row">
                <div class="cardBody">
                         <div id="piechart"></div>
                         <?php $field = "piechart";
@@ -258,7 +259,7 @@
                         </div>
                               </div>
                               </div>
-                  
+                              </div>
                
          <script language = "JavaScript"></script>
       </form>
