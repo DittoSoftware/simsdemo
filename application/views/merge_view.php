@@ -47,37 +47,6 @@ if(!isset($_SESSION['username'])){
 	  </div>
     </div>
   </div>
-<<<<<<< HEAD
--->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a class="nav-link button1"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/main';">Dashboard</button></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link button2"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/filemanager';">File Merge</button></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link button3"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/users';">Account Manager</button></a>
-						</li>
-			
-					</ul>
-					<ul class="navbar-nav navbar-right">
-							<li class="nav-item">
-									<a class="nav-link logoutButton"><button type="button"  onclick="location.href='https://cissimsdev.azurewebsites.net/index.php/signin/logout';">Logout</button></a>
-							</li>
-					</ul>
-				</div>
-		</nav>
-
-=======
->>>>>>> parent of 5149268... file merge nav
 <center><h1>Export Data</h1></center>
 <table id="example" class="display" style="width:100%">
         <thead>
