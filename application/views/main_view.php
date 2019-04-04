@@ -184,15 +184,15 @@
                      <br><br>
                      <select name="p_id" style="width: 100%;">
                      <option value="0">All Programs</option>
+                     <option value="AFL">AFL Division</option>
                      <option value="After_School">Afterschool Division</option>
                      <option value="AmeriCorps">AmeriCorps (Literacy) Division</option>
-                     <option value="AFL">AFL Division</option>
                      <option value="BTS">Bridge to Sucess Division</option>
-                     <option value="SEP">Student Enrichment Division</option>
                      <option value="Gear_Up">Gear Up</option>
+                     <option value="SEP">Student Enrichment Division</option>
                      </select>
-                     <?php echo "Currently Displaying: School #".$_POST['s_id']."'s Student Data" ; ?>
-                     <?php echo "Currently Displaying: ".$_POST['p_id']."'s Student Data" ; ?>
+                     <?php echo "Currently Displaying: School #".$_POST['s_id'].name."'s Student Data" ; ?>
+                     <?php echo "Currently Displaying: ".$_POST['p_id'].name."'s Student Data" ; ?>
                      <br><br>
                      <button type="submit">Update Charts</button>
                     
