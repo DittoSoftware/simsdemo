@@ -7,6 +7,10 @@
    {
      $_POST['s_id'] = "0";
    }
+   if(empty($_POST['p_id']))
+   {
+     $_POST['p_id'] = "0";
+   }
    ?>
 <!DOCTYPE html>
 <html>
@@ -178,10 +182,22 @@
                         <!-- Doesn't Works -->
                      </select>
                      <br><br>
+                     <select name="p_id" style="width: 100%;">
+                     <option value="0">All Programs</option>
+                     <option value="AFL">AFL Division</option>
+                     <option value="After_School">Afterschool Division</option>
+                     <option value="AmeriCorps">AmeriCorps (Literacy) Division</option>
+                     <option value="BTS">Bridge to Sucess Division</option>
+                     <option value="Gear_Up">Gear Up</option>
+                     <option value="SEP">Student Enrichment Division</option>
+                     </select>
                      <?php echo "Currently Displaying: School #".$_POST['s_id']."'s Student Data" ; ?>
-                     
+                      Currently Displaying: <p id="demo"></p> Student Data
                      <br><br>
                      <button type="submit">Update Charts</button>
+                     <button onclick="myFunction()">Try it</button>
+
+<script>
                     
             </div>
         
@@ -281,7 +297,12 @@
                               </div>
                               </div>
                
-         <script language = "JavaScript"></script>
+         <script language = "JavaScript">
+         function myFunction() {
+         var x = document.getElementsByName("p_id")[0].value;
+         document.getElementById("demo").innerHTML = x;
+         }
+</script>
       </form>
    </body>
 </html>
