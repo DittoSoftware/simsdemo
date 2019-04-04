@@ -47,7 +47,7 @@
             </ul>
          </div>
       </nav>
-
+      <p>Changes!<p>
       <div class="col-sm-2 sidenav">
               <br>
               <img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
