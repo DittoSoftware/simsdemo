@@ -47,7 +47,7 @@
             </ul>
          </div>
       </nav>
-      <p>Changes!<p>
+
       <div class="col-sm-2 sidenav">
               <br>
               <img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
@@ -55,7 +55,7 @@
             
             
          
-         
+         <div row content>
           <form method="POST" action="main?action=s_id=">
                   Select School Demographics:
                   <div class="cardBody">
@@ -184,7 +184,7 @@
                      <br><br>
                      <button type="submit">Update Charts</button>
                     </form>
-            
+            </div>
         </div>
         <div class="col-sm-8 text-left">
                <div class="cardBody">
