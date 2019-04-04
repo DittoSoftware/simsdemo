@@ -52,10 +52,10 @@
               <br>
               <img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
               <br><br>
-      </div>
             
-         <div class="container-fluid text center">
-         <div class="row content"> 
+            
+         
+         
           <form method="POST" action="main?action=s_id=">
                   Select School Demographics:
                   <div class="cardBody">
@@ -183,9 +183,10 @@
                      </div>
                      <br><br>
                      <button type="submit">Update Charts</button>
-               </div>
-            </div>
-            <div class="col-sm-8 text-left"> 
+                    </form>
+            
+        </div>
+        <div class="col-sm-8 text-left">
                <div class="cardBody">
                         <div id="piechart"></div>
                         <?php $field = "piechart";
@@ -230,8 +231,6 @@
                            } 
                            include 'ChartView.php'; ?>
                      </div>
-                     </div>
-                     </div>
                               <div class="cardBody">
                               <div id="piechart3"></div>
                               <?php $field = "piechart3"; 
@@ -254,14 +253,10 @@
                                  } 
                                  include 'ChartView.php'; ?>
                            </div>
-                              </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            </div>
-         </div>
+                     
+                  
+               
          <script language = "JavaScript"></script>
       </form>
    </body>
