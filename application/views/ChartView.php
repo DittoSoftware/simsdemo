@@ -24,7 +24,7 @@ var data = google.visualization.arrayToDataTable([
     echo 'var options = {"title":"# of Students per '.$topic.'", "width":350, "height":200};
 
   var chart = new google.visualization.PieChart(document.getElementById("'.$field.'"));
-  chart.draw(data);
+  chart.draw(data, options);
 }
 </script>'
 ?>
