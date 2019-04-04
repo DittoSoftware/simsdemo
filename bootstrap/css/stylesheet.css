@@ -81,6 +81,8 @@ option{
       -ms-transform: scale(1.05);
           transform: scale(1.05);
 }
+svg > g > g:last-child { pointer-events: none }
+
 
 .no_write #mkdir, .no_write #file_drop_target {display: none}
 .progress_track {display:inline-block;width:200px;height:10px;border:1px solid #333;margin: 0 4px 0 10px;}
