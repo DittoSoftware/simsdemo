@@ -55,9 +55,6 @@
               <img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
               <br><br>
             
-            
-         
-         
           <form method="POST" action="main?action=s_id=">
                   Select School Demographics:
                   
@@ -189,15 +186,12 @@
             </div>
         
         <!--Card deck-->
-        <div class="container-fluid text-center col-sm-8">
-           
-               
+        <div class="col-sm-8 text-left">
                   <br>
                   <h2 class="text-center">Dashboard</h2>
                   <div class="card-deck center-align">
                      <div class="row">
                         <!--card-->
-                        <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
                            <div class="card-body center">
                               <h4 class="card-title text-center">Grade Level</h4>
                         <div id="piechart"></div>
