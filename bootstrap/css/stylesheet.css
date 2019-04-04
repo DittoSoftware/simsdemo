@@ -81,7 +81,7 @@ option{
       -ms-transform: scale(1.05);
           transform: scale(1.05);
 }
-svg > g > g:last-child { pointer-events: none }
+svg > i > i:last-child { pointer-events: none }
 
 
 .no_write #mkdir, .no_write #file_drop_target {display: none}
