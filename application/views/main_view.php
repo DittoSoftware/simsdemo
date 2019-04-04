@@ -47,6 +47,7 @@
             </ul>
          </div>
       </nav>
+      <p>Changes!</p>
       <div class="container-fluid text-center">    
       <div class="row content">
       <div class="col-sm-2 sidenav">
@@ -61,7 +62,7 @@
                   Select School Demographics:
                   <div class="cardBody">
                      <!-- Put Drop Down Here -->
-                     <select name="s_id" style="width: 35%;">
+                     <select name="s_id" style="width: 100%;">
                         <option value="0">All Schools</option>
                         <option value="0061">MATTIE V RUTHERFORD ALT ED CTR</option>
                         <option value="0141">GRAND PARK CAREER CENTER</option>
