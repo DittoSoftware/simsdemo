@@ -250,7 +250,10 @@
                      </div>
                         </div>
                         </div>
-                              <div class="cardBody">
+                              <!--Card-->
+                              <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                           <div class="card-body">
+                              <h4 class="card-title text-center">Race</h4>
                               <div id="piechart3"></div>
                               <?php $field = "piechart3"; 
                                  $topic = "Gender";
@@ -271,6 +274,10 @@
                                  $i++;
                                  } 
                                  include 'ChartView.php'; ?>
+                              </div>
+                              </div>
+                              </div>
+
                            </div>
                         </div>
                               </div>
