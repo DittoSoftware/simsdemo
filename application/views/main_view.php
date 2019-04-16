@@ -51,9 +51,9 @@
             </ul>
          </div>
       </nav>
-      <div class="row content">
+   
       <div class="container-fluid text-left">    
-      
+      <div class="row content">
       <div class="col-sm-2 sidenav">
               <br>
               <img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
@@ -196,7 +196,7 @@
                      <button type="submit">Update Charts</button>
 </div>
                     
-            </div>
+            
         
         <!--Card deck-->
         <div class="col-sm-8 text-left">
@@ -289,6 +289,7 @@
                               
                            </div>
                         </div>
+                              </div>
                               </div>
                               </div>
                               </div>
