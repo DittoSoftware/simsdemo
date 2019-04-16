@@ -3,6 +3,7 @@
    	header("Location: https://cissimsdev.azurewebsites.net/index.php/signin");
    }
    require('fieldCount.php');
+   require('metrics_view.php');
    if(empty($_POST['s_id']))
    {
      $_POST['s_id'] = "0";
@@ -196,7 +197,18 @@
                   <br>
                   <h2 class="text-center">Dashboard</h2>
                   <div class="card-deck center-align">
-                     
+                     <!--card-->
+                     <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                           <div class="card-body center">
+                              <h4 class="card-title text-center">Grade Level</h4>
+                        <?php
+                              $school = $_POST['s_id']; 
+                              $pres = metricCount('Days_Absent','tbl_name',$school);
+                              echo $pres;
+
+                        ?>
+                        </div>
+                        </div>
                         <!--card-->
                         <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
                            <div class="card-body center">
