@@ -39,9 +39,9 @@ if($PASSWORD) {
 // must be in UTF-8 or `basename` doesn't work
 setlocale(LC_ALL,'en_US.UTF-8');
 
-//chdir('C:\xampp\htdocs');
+chdir('C:\xampp\htdocs');
 //chdir('C:\xampp\htdocs\simsdemo\application\files');
-chdir('D:\home\site\wwwroot\application\files');
+//chdir('D:\home\site\wwwroot\application\files');
 
 
 $tmp_dir = dirname($_SERVER['SCRIPT_FILENAME']);
@@ -424,14 +424,15 @@ $(function(){
 		return pos ? [parseInt(d/10),".",d%10," ",s[pos]].join('') : bytes + ' bytes';
 	}
 })
-function myFunction(){
-	var pswd = prompt("Please enter upload password.");
-	if (pswd != "cisjax"){
-		window.location.assign("http://cisjax.org");
-	} else {
+
+
+function validate(){
+
+
 		document.getElementById("file_drop_target").style.display="inline";
-		document.getElementById("upload_button").style.display="none";
-	}
+		document.getElementById("password_box").style.display="none";
+		
+
 }
 
 
@@ -441,9 +442,6 @@ function myFunction(){
 
 
 <br>
-
-
-
 
 
 <body>
@@ -459,9 +457,14 @@ function myFunction(){
     <div class="col-sm-8 text-left">
 	<center><h1>Upload Files Here</h1>
 	<br>
-	<div  id="upload_button">
-<button onclick="myFunction()">Enter Upload Password</button>
-   </div>
+	<br>
+	<div id="password_box" onsubmit="return false;" style="display:block">
+		<form>
+			<input type="password" id="pass" name="password">
+		   	<input type="submit" value="Submit" onClick="validate()">
+		</form>
+	</div>
+	
    <?php if($allow_upload): ?>
 
 	<div id="file_drop_target" style="display:none">
@@ -470,6 +473,7 @@ function myFunction(){
 		<input type="file" multiple />
 
 	</div>
+
    <?php endif; ?>
    </center>
 </div>
