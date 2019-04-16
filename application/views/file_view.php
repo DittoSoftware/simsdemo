@@ -40,13 +40,12 @@ if($PASSWORD) {
 	}
 }
 
-// must be in UTF-8 or `basename` doesn't work
-setlocale(LC_ALL,'en_US.UTF-8');
-
 //chdir('C:\xampp\htdocs');
 //chdir('C:\xampp\htdocs\simsdemo\application\files');
 chdir('D:\home\site\wwwroot\application\files');
 
+// must be in UTF-8 or `basename` doesn't work
+setlocale(LC_ALL,'en_US.UTF-8');
 
 $tmp_dir = dirname($_SERVER['SCRIPT_FILENAME']);
 if(DIRECTORY_SEPARATOR==='\\') $tmp_dir = str_replace('/',DIRECTORY_SEPARATOR,$tmp_dir);
@@ -90,7 +89,7 @@ if($_GET['do'] == 'list') {
 	        ];
 	    }
 	} else {
-		alert(err(412,"Not a Directory"));
+		err(412,"Not a Directory");
 	}
 	echo json_encode(['success' => true, 'is_writable' => is_writable($file), 'results' =>$result]);
 	exit;
@@ -194,25 +193,76 @@ function asBytes($ini_v) {
 	$s = ['g'=> 1<<30, 'm' => 1<<20, 'k' => 1<<10];
 	return intval($ini_v) * ($s[strtolower(substr($ini_v,-1))] ?: 1);
 }
-$MAX_UPLOAD_SIZE = min(asBytes(ini_get('post_max_size')), asBytes(ini_get('upload_max_filesize')));
+$MAX_UPLOAD_SIZE = min(asBytes(ini_get('post_max_size')), asBytes(ini_get('upload_max_filesize'))); 
 ?>
+
 <!DOCTYPE html>
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
 <!--Cached Boostrap CDN-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!--Cached jQuery CDN-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-		<!--<link rel="stylesheet" type="text/css" href="http://localhost/simsdemo/bootstrap/css/stylesheet.css"/>-->
-		<link rel="stylesheet" type="text/css" href="<?= base_url()?>/bootstrap/css/stylesheet.css"/>
+
+
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>bootstrap/css/stylesheet.css">
 
 <style>
 	
+body {font-family: "lucida grande","Segoe UI",Arial, sans-serif; font-size: 14px;width:1024;margin:0;}
+th {font-weight: normal; color: #1F75CC; background-color: #F0F9FF; padding:.5em 1em .5em .2em;
+	text-align: left;cursor:pointer;user-select: none;}
+th .indicator {margin-left: 6px }
+thead {border-top: 1px solid #82CFFA; border-bottom: 1px solid #96C4EA;border-left: 1px solid #E7F2FB;
+	border-right: 1px solid #E7F2FB; }
+#top {height:52px;}
+#mkdir {display:inline-block;float:right;padding-top:16px;}
+label { display:block; font-size:11px; color:#555;}
+#file_drop_target {width:500px; padding:12px 0; border: 4px dashed #ccc;font-size:12px;color:#ccc;
+	text-align: center;float:right;margin-right:20px;}
+#file_drop_target.drag_over {border: 4px dashed #96C4EA; color: #96C4EA;}
+#upload_progress {padding: 4px 0;}
+#upload_progress .error {color:#a00;}
+#upload_progress > div { padding:3px 0;}
+.no_write #mkdir, .no_write #file_drop_target {display: none}
+.progress_track {display:inline-block;width:200px;height:10px;border:1px solid #333;margin: 0 4px 0 10px;}
+.progress {background-color: #82CFFA;height:10px; }
+footer {font-size:11px; color:#bbbbc5; padding:4em 0 0;text-align: left;}
+footer a, footer a:visited {color:#bbbbc5;}
+#breadcrumb { padding-top:34px; font-size:15px; color:#aaa;display:inline-block;float:left;}
+#folder_actions {width: 50%;float:right;}
+a, a:visited { color:#00c; text-decoration: none}
+a:hover {text-decoration: underline}
+.sort_hide{ display:none;}
+table {border-collapse: collapse;width:100%;}
+thead {max-width: 1024px}
+td { padding:.2em 1em .2em .2em; border-bottom:1px solid #def;height:30px; font-size:12px;white-space: nowrap;}
+td.first {font-size:14px;white-space: normal;}
+td.empty { color:#777; font-style: italic; text-align: center;padding:3em 0;}
+.is_dir .size {color:transparent;font-size:0;}
+.is_dir .size:before {content: "--"; font-size:14px;color:#333;}
+.is_dir .download{visibility: hidden}
+a.delete {display:inline-block;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADtSURBVHjajFC7DkFREJy9iXg0t+EHRKJDJSqRuIVaJT7AF+jR+xuNRiJyS8WlRaHWeOU+kBy7eyKhs8lkJrOzZ3OWzMAD15gxYhB+yzAm0ndez+eYMYLngdkIf2vpSYbCfsNkOx07n8kgWa1UpptNII5VR/M56Nyt6Qq33bbhQsHy6aR0WSyEyEmiCG6vR2ffB65X4HCwYC2e9CTjJGGok4/7Hcjl+ImLBWv1uCRDu3peV5eGQ2C5/P1zq4X9dGpXP+LYhmYz4HbDMQgUosWTnmQoKKf0htVKBZvtFsx6S9bm48ktaV3EXwd/CzAAVjt+gHT5me0AAAAASUVORK5CYII=) no-repeat scroll 0 2px;
+	color:#d00;	margin-left: 15px;font-size:11px;padding:0 0 0 13px;
+}
+.name {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABAklEQVRIie2UMW6DMBSG/4cYkJClIhauwMgx8CnSC9EjJKcwd2HGYmAwEoMREtClEJxYakmcoWq/yX623veebZmWZcFKWZbXyTHeOeeXfWDN69/uzPP8x1mVUmiaBlLKsxACAC6cc2OPd7zYK1EUYRgGZFkG3/fPAE5fIjcCAJimCXEcGxKnAiICERkSIcQmeVoQhiHatoWUEkopJEkCAB/r+t0lHyVN023c9z201qiq6s2ZYA9jDIwx1HW9xZ4+Ihta69cK9vwLvsX6ivYf4FGIyJj/rg5uqwccd2Ar7OUdOL/kPyKY5/mhZJ53/2asgiAIHhLYMARd16EoCozj6EzwCYrrX5dC9FQIAAAAAElFTkSuQmCC) no-repeat scroll 0px 12px;
+	padding:15px 0 10px 40px;
+}
+.is_dir .name {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADdgAAA3YBfdWCzAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAI0SURBVFiF7Vctb1RRED1nZu5977VQVBEQBKZ1GCDBEwy+ISgCBsMPwOH4CUXgsKQOAxq5CaKChEBqShNK222327f79n0MgpRQ2qC2twKOGjE352TO3Jl76e44S8iZsgOww+Dhi/V3nePOsQRFv679/qsnV96ehgAeWvBged3vXi+OJewMW/Q+T8YCLr18fPnNqQq4fS0/MWlQdviwVqNpp9Mvs7l8Wn50aRH4zQIAqOruxANZAG4thKmQA8D7j5OFw/iIgLXvo6mR/B36K+LNp71vVd1cTMR8BFmwTesc88/uLQ5FKO4+k4aarbuPnq98mbdo2q70hmU0VREkEeCOtqrbMprmFqM1psoYAsg0U9EBtB0YozUWzWpVZQgBxMm3YPoCiLpxRrPaYrBKRSUL5qn2AgFU0koMVlkMOo6G2SIymQCAGE/AGHRsWbCRKc8VmaBN4wBIwkZkFmxkWZDSFCwyommZSABgCmZBSsuiHahA8kA2iZYzSapAsmgHlgfdVyGLTFg3iZqQhAqZB923GGUgQhYRVElmAUXIGGVgedQ9AJJnAkqyClCEkkfdM1Pt13VHdxDpnof0jgxB+mYqO5PaCSDRIAbgDgdpKjtmwm13irsnq4ATdKeYcNvUZAt0dg5NVwEQFKrJlpn45lwh/LpbWdela4K5QsXEN61tytWr81l5YSY/n4wdQH84qjd2J6vEz+W0BOAGgLlE/AMAPQCv6e4gmWYC/QF3d/7zf8P/An4AWL/T1+B2nyIAAAAASUVORK5CYII=) no-repeat scroll 0px 10px;
+	padding:15px 0 10px 40px;
+}
+.download {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB2klEQVR4nJ2ST2sTQRiHn5mdmj92t9XmUJIWJGq9NHrRgxQiCtqbl97FqxgaL34CP0FD8Qv07EHEU0Ew6EXEk6ci8Q9JtcXEkHR3k+zujIdUqMkmiANzmJdnHn7vzCuIWbe291tSkvhz1pr+q1L2bBwrRgvFrcZKKinfP9zI2EoKmm7Azstf3V7fXK2Wc3ujvIqzAhglwRJoS2ImQZMEBjgyoDS4hv8QGHA1WICvp9yelsA7ITBTIkwWhGBZ0Iv+MUF+c/cB8PTHt08snb+AGAACZDj8qIN6bSe/uWsBb2qV24/GBLn8yl0plY9AJ9NKeL5ICyEIQkkiZenF5XwBDAZzWItLIIR6LGfk26VVxzltJ2gFw2a0FmQLZ+bcbo/DPbcd+PrDyRb+GqRipbGlZtX92UvzjmUpEGC0JgpC3M9dL+qGz16XsvcmCgCK2/vPtTNzJ1x2kkZIRBSivh8Z2Q4+VkvZy6O8HHvWyGyITvA1qndNpxfguQNkc2CIzM0xNk5QLedCEZm1VKsf2XrAXMNrA2vVcq4ZJ4DhvCSAeSALXASuLBTW129U6oPrT969AK4Bq0AeWARs4BRgieMUEkgDmeO9ANipzDnH//nFB0KgAxwATaAFeID5DQNatLGdaXOWAAAAAElFTkSuQmCC) no-repeat scroll 0px 5px;
+	padding:4px 0 4px 20px;
+}
 </style>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script>
@@ -376,7 +426,6 @@ $(function(){
 			.addClass('download').text('download');
 		var $delete_link = $('<a href="#" />').attr('data-file',data.path).addClass('delete').text('delete');
 		var perms = [];
-		
 		if(data.is_readable) perms.push('read');
 		if(data.is_writable) perms.push('write');
 		if(data.is_executable) perms.push('exec');
@@ -393,12 +442,12 @@ $(function(){
 	function renderBreadcrumbs(path) {
 		var base = "",
 			$html = $('<div/>').append( $('<a href=#>Home</a></div>') );
-		$.each(path.split('/'),function(k,v){
+		$.each(path.split('%2F'),function(k,v){
 			if(v) {
 				var v_as_text = decodeURIComponent(v);
 				$html.append( $('<span/>').text(' ▸ ') )
 					.append( $('<a/>').attr('href','#'+base+v).text(v_as_text) );
-				base += v + '/';
+				base += v + '%2F';
 			}
 		});
 		return $html;
@@ -417,16 +466,9 @@ $(function(){
 		return pos ? [parseInt(d/10),".",d%10," ",s[pos]].join('') : bytes + ' bytes';
 	}
 })
-function myFunction(){
-	alert ("My Function Works");
-}
 
 </script>
-
-
-
-</head>
-<body>
+</head><body>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         
@@ -435,20 +477,18 @@ function myFunction(){
 				</button>
 			
 				<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-				<ul class="navbar-nav mr-auto">
-               <li class="nav-item active">
-                  <a class="nav-link button1"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/main';">Dashboard</button></a>
-               </li>
-               <li class="nav-item">
-							<a class="nav-link button2"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/filemanager';">File Manager</button></a>
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link button1"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/main';">Dashboard</button></a>
 						</li>
-               <li class="nav-item">
-                  <a class="nav-link button3"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/loadvw';">File Merge</button></a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link button4"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/users';">Account Manager</button></a>
-               </li>
-            </ul>
+						<li class="nav-item">
+							<a class="nav-link button2"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/loadvw';">File Merge</button></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link button3"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/users';">Account Manager</button></a>
+						</li>
+			
+					</ul>
 					<ul class="navbar-nav navbar-right">
 							<li class="nav-item">
 									<a class="nav-link logoutButton"><button type="button"  onclick="location.href='https://cissimsdev.azurewebsites.net/index.php/signin/logout';">Logout</button></a>
@@ -458,60 +498,45 @@ function myFunction(){
 			
 			</nav>
 
-			<div class="container-fluid text-center">
+	<div class="window">
+	<div class="container-fluid text-center">
 			<div class="row content">
 			<div class="col-sm-2 sidenav">
 				<br>
 				<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
-				
-				<br>
-
-				
-					
-			</div>
-
-			<div id="upload_progress"></div>
-
-
-<div class="col-sm-8 text-left">    
-	<br>
-	<h2 class="text-center">File Manager</h2>
-	<?php if($allow_upload): ?>
-				<div class="mr-auto" id="file_drop_target">
-					Drag Files Here To Upload
-					<b>or</b>
-					<input type="file" multiple />
-					
-					</div>
-					<?php endif; ?>
-
-					
-				<div class="ml-auto" id="top">
-   					<?php if($allow_create_folder): ?>
-						<form action="?" method="post" id="mkdir" >
-						<label for=dirname>Create New Folder</label><input id=dirname type=text name=name value="" />
-						<input type="submit" value="create" />
-						<br>
-						
-						</form>
-				</div>
+			</div>	
+<div id="top">
+   <?php if($allow_create_folder): ?>
+	<form action="?" method="post" id="mkdir" />
+		<label for=dirname>Create New Folder</label><input id=dirname type=text name=name value="" />
+		<input type="submit" value="create" />
+	</form>
 
    <?php endif; ?>
-    <table class="table table-bordered table-striped width=100% shadow p-3 mb-5 bg-white rounded">
-        <!-- <h2 class="text-center">File Manager</h2> -->
-	<thead>
-		<tr>
+
+   <?php if($allow_upload): ?>
+</div>
+	<div id="file_drop_target">
+		Drag Files Here To Upload
+		<b>or</b>
+		<input type="file" multiple />
+	</div>
+   <?php endif; ?>
+	<div id="breadcrumb">&nbsp;</div>
+</div>
+
+<div id="upload_progress"></div>
+<table id="table"><thead><tr>
 	<th>Name</th>
 	<th>Size</th>
 	<th>Modified</th>
 	<th>Permissions</th>
 	<th>Actions</th>
-</tr>
-</thead>
-<tbody id="list">
-</tbody>
-</table>
+</tr></thead><tbody id="list">
 
+</tbody></table>
 </div>
-</div>
+
 </body></html>
+
+

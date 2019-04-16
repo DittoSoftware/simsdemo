@@ -290,6 +290,7 @@
                               </div>
                               </div>
                               <!--Card-->
+                              <div class="row">
                               <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
                            <div class="card-body center">
                               <h4 class="card-title text-center">AFL</h4>
@@ -364,7 +365,9 @@
                                  include 'ChartView.php'; ?>
                               </div>
                               </div>
+                              </div>
                            <!--Card-->
+                              <div class="row">
                            <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
                            <div class="card-body center">
                               <h4 class="card-title text-center">BTS</h4>
@@ -437,6 +440,7 @@
                                  $i++;
                                  } 
                                  include 'ChartView.php'; ?>
+                              </div>
                               </div>
                               </div>
                            </div>
