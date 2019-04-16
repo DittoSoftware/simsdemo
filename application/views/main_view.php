@@ -194,7 +194,7 @@
                      <?php echo "Currently Displaying: School #".$_POST['s_id']."'s Student Data" ; ?>
                       Currently Displaying: <p id="demo"></p> Student Data
                      <button type="submit">Update Charts</button>
-
+</div>
 <script>
                     
             </div>
