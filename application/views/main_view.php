@@ -185,17 +185,7 @@
                         <!-- Doesn't Works -->
                      </select>
                      <br><br>
-                     <select name="p_id" style="width: 100%;">
-                     <option value="0" selected>All Programs</option>
-                     <option value="AFL">AFL Division</option>
-                     <option value="After_School">Afterschool Division</option>
-                     <option value="AmeriCorps">AmeriCorps (Literacy) Division</option>
-                     <option value="BTS">Bridge to Sucess Division</option>
-                     <option value="Gear_Up">Gear Up</option>
-                     <option value="SEP">Student Enrichment Division</option>
-                     </select>
-                     <?php echo "Currently Displaying: School #".$_POST['s_id']."'s Student Data" ; ?>
-                      Currently Displaying: <p id="demo"></p> Student Data
+                     <?php echo "Currently Displaying: ".$_POST['s_id']."'s Student Data" ; ?>
                      <button type="submit">Update Charts</button>
 </div>
                     
@@ -287,6 +277,31 @@
                                  include 'ChartView.php'; ?>
                               </div>
                               </div>
+                              <!--Card-->
+                              <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                           <div class="card-body center">
+                              <h4 class="card-title text-center">AFL</h4>
+                              <div id="piechart4"></div>
+                              <?php $field = "piechart4"; 
+                                 $school = $_POST['s_id']; 
+                                 $fieldArray = fieldCount('AFL', 'tbl_name',$school);
+                                 $arrayA = [];
+                                 $arrayB = [];
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayA,$fieldArray[$i]["AFL"]);
+                                 $i++;
+                                 } 
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayB,$fieldArray[$i]['count']);
+                                 $i++;
+                                 } 
+                                 include 'ChartView.php'; ?>
+                              </div>
+                              </div>
                               
                               
                               
@@ -298,12 +313,6 @@
                               </div>
                               </div>
                
-         <script language = "JavaScript">
-         function myFunction() {
-         var x = document.getElementsByName("p_id")[0].value;
-         document.getElementById("demo").innerHTML = x;
-         }
-</script>
       </form>
    </body>
 </html>
