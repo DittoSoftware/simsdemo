@@ -299,9 +299,106 @@
                                  include 'ChartView.php'; ?>
                               </div>
                               </div>
-                              
-                              
-                              
+                              <!--Card-->
+                              <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                           <div class="card-body center">
+                              <h4 class="card-title text-center">After School</h4>
+                              <div id="piechart5"></div>
+                              <?php $field = "piechart5"; 
+                                 $school = $_POST['s_id']; 
+                                 $fieldArray = fieldCount('After_School', 'tbl_name',$school);
+                                 $arrayA = [];
+                                 $arrayB = [];
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayA,$fieldArray[$i]["After_School"]);
+                                 $i++;
+                                 } 
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayB,$fieldArray[$i]['count']);
+                                 $i++;
+                                 } 
+                                 include 'ChartView.php'; ?>
+                              </div>
+                              </div>
+                           <!--Card-->
+                           <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                           <div class="card-body center">
+                              <h4 class="card-title text-center">BTS</h4>
+                              <div id="piechart6"></div>
+                              <?php $field = "piechart6"; 
+                                 $school = $_POST['s_id']; 
+                                 $fieldArray = fieldCount('BTS', 'tbl_name',$school);
+                                 $arrayA = [];
+                                 $arrayB = [];
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayA,$fieldArray[$i]["BTS"]);
+                                 $i++;
+                                 } 
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayB,$fieldArray[$i]['count']);
+                                 $i++;
+                                 } 
+                                 include 'ChartView.php'; ?>
+                              </div>
+                              </div>
+                              <!--Card-->
+                              <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                           <div class="card-body center">
+                              <h4 class="card-title text-center">Gear Up</h4>
+                              <div id="piechart6"></div>
+                              <?php $field = "piechart6"; 
+                                 $school = $_POST['s_id']; 
+                                 $fieldArray = fieldCount('Gear_Up', 'tbl_name',$school);
+                                 $arrayA = [];
+                                 $arrayB = [];
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayA,$fieldArray[$i]["Gear_Up"]);
+                                 $i++;
+                                 } 
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayB,$fieldArray[$i]['count']);
+                                 $i++;
+                                 } 
+                                 include 'ChartView.php'; ?>
+                              </div>
+                              </div>
+                                       <!--Card-->
+                                       <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                           <div class="card-body center">
+                              <h4 class="card-title text-center">SEP</h4>
+                              <div id="piechart7"></div>
+                              <?php $field = "piechart7"; 
+                                 $school = $_POST['s_id']; 
+                                 $fieldArray = fieldCount('SEP', 'tbl_name',$school);
+                                 $arrayA = [];
+                                 $arrayB = [];
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayA,$fieldArray[$i]["SEP"]);
+                                 $i++;
+                                 } 
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayB,$fieldArray[$i]['count']);
+                                 $i++;
+                                 } 
+                                 include 'ChartView.php'; ?>
+                              </div>
+                              </div>
                            </div>
                         </div>
                               </div>
