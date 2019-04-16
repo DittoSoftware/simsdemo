@@ -6,7 +6,6 @@
    if(empty($_POST['s_id']))
    {
      $_POST['s_id'] = "0";
-     echo $_POST['s_id'].name;
    }
    if(empty($_POST['p_id']))
    {
