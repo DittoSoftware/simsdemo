@@ -183,7 +183,7 @@
                         <!-- Doesn't Works -->
                      </select>
                      <br><br>
-                     <?php echo "Currently Displaying: School #".$_POST['s_id']."'s Student Data" ; ?>
+                     <?php echo "Currently Displaying: ".$_POST['s_id']."'s Student Data" ; ?>
                      <button type="submit">Update Charts</button>
 </div>
                     
@@ -278,17 +278,17 @@
                               <!--Card-->
                               <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
                            <div class="card-body center">
-                              <h4 class="card-title text-center">Program(s)</h4>
+                              <h4 class="card-title text-center">AFL</h4>
                               <div id="piechart4"></div>
                               <?php $field = "piechart4"; 
                                  $school = $_POST['s_id']; 
-                                 $fieldArray = fieldCount('Gender_Code', 'tbl_name',$school);
+                                 $fieldArray = fieldCount('AFL', 'tbl_name',$school);
                                  $arrayA = [];
                                  $arrayB = [];
                                  $i = 1;
                                  while($i<count($fieldArray))
                                  {
-                                 array_push($arrayA,$fieldArray[$i]["Gender_Code"]);
+                                 array_push($arrayA,$fieldArray[$i]["AFL"]);
                                  $i++;
                                  } 
                                  $i = 1;
