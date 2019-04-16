@@ -499,6 +499,12 @@ $(function(){
 			</nav>
 
 	<div class="window">
+	<div class="container-fluid text-center">
+			<div class="row content">
+			<div class="col-sm-2 sidenav">
+				<br>
+				<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
+			</div>	
 <div id="top">
    <?php if($allow_create_folder): ?>
 	<form action="?" method="post" id="mkdir" />
@@ -509,7 +515,7 @@ $(function(){
    <?php endif; ?>
 
    <?php if($allow_upload): ?>
-
+</div>
 	<div id="file_drop_target">
 		Drag Files Here To Upload
 		<b>or</b>
