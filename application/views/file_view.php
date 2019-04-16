@@ -464,7 +464,17 @@ function myFunction(){
 				
 				<br>
 
-				<?php if($allow_upload): ?>
+				
+					
+			</div>
+
+			<div id="upload_progress"></div>
+
+
+<div class="col-sm-8 text-left">    
+	<br>
+	<h2 class="text-center">File Manager</h2>
+	<?php if($allow_upload): ?>
 				<div id="file_drop_target">
 					Drag Files Here To Upload
 					<b>or</b>
@@ -485,15 +495,6 @@ function myFunction(){
 				</div>
 
    <?php endif; ?>
-					
-			</div>
-
-			<div id="upload_progress"></div>
-
-
-<div class="col-sm-8 text-left">    
-	<br>
-	<h2 class="text-center">File Manager</h2>
     <table class="table table-bordered table-striped width=100% shadow p-3 mb-5 bg-white rounded">
         <!-- <h2 class="text-center">File Manager</h2> -->
 	<thead>
