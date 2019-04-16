@@ -483,14 +483,14 @@ function myFunction(){
 					</div>
 					<?php endif; ?>
 
-					<br>
+					
 				<div class="align-right" id="top">
    					<?php if($allow_create_folder): ?>
 						<form action="?" method="post" id="mkdir" >
 						<label for=dirname>Create New Folder</label><input id=dirname type=text name=name value="" />
 						<input type="submit" value="create" />
 						<br>
-						<br>
+						
 						</form>
 				</div>
 

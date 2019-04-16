@@ -51,9 +51,9 @@
             </ul>
          </div>
       </nav>
-   
-      <div class="container-fluid text-left">    
       <div class="row content">
+      <div class="container-fluid text-left">    
+      
       <div class="col-sm-2 sidenav">
               <br>
               <img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
