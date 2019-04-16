@@ -93,7 +93,7 @@ if(!isset($_SESSION['username'])){
 			<!-- <a href="<?php echo base_url(); ?>index.php/users/addnew" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add User</a><br><br> -->
 			<br>
 			<h2 class="text-center">Account Manager</h2>
-			<a href="<?php echo base_url(); ?>index.php/users/addnew" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add User</a><br><br>
+			<a href="<?php echo base_url(); ?>index.php/users/addnew" class="btn button4"><span class="glyphicon glyphicon-plus"></span> Add User</a><br><br>
 
 			<table class="table table-bordered table-striped width=100% shadow p-3 mb-5 bg-white rounded">
 				<thead>
@@ -118,7 +118,7 @@ if(!isset($_SESSION['username'])){
 							<td><?php echo $user->lname; ?></td>
 							<td><?php echo $user->email; ?></td>
 							<td><?php echo $user->role; ?></td>
-							<td><a href="<?php echo base_url(); ?>index.php/users/edit/<?php echo $user->id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</a> || <a href="<?php echo base_url(); ?>index.php/users/delete/<?php echo $user->id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a></td>
+							<td><a href="<?php echo base_url(); ?>index.php/users/edit/<?php echo $user->id; ?>" class="btn button2"><span class="glyphicon glyphicon-edit"></span> Edit</a> || <a href="<?php echo base_url(); ?>index.php/users/delete/<?php echo $user->id; ?>" class="btn button1"><span class="glyphicon glyphicon-trash"></span> Delete</a></td>
 						</tr>
 						<?php
 					}
