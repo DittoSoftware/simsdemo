@@ -39,11 +39,20 @@ if(!isset($_SESSION['username'])){
         <a class="navbar-brand">SIMS &raquo; File Merge</a>
       </div>
       <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-left">
-		  <li><a href="https://cissimsdev.azurewebsites.net/index.php/main">Dashboard</a></li>
-		  <li><a href="https://cissimsdev.azurewebsites.net/index.php/filemanager">File Manager</a></li>
-		  <li><a href="https://cissimsdev.azurewebsites.net/index.php/users">Account Manager</a></li>
-        </ul>
+      <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                  <a class="nav-link button1"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/main';">Dashboard</button></a>
+               </li>
+               <li class="nav-item">
+							<a class="nav-link button2"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/filemanager';">File Manager</button></a>
+						</li>
+               <li class="nav-item">
+                  <a class="nav-link button3"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/loadvw';">File Merge</button></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link button4"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/users';">Account Manager</button></a>
+               </li>
+            </ul>
 	  </div>
     </div>
   </div>

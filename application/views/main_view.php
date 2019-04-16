@@ -7,6 +7,10 @@
    {
      $_POST['s_id'] = "0";
    }
+   if(empty($_POST['p_id']))
+   {
+     $_POST['p_id'] = "0";
+   }
    ?>
 <!DOCTYPE html>
 <html>
@@ -34,10 +38,13 @@
                   <a class="nav-link button1"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/main';">Dashboard</button></a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link button2"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/loadvw';">File Merge</button></a>
+							<a class="nav-link button2"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/filemanager';">File Manager</button></a>
+						</li>
+               <li class="nav-item">
+                  <a class="nav-link button3"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/loadvw';">File Merge</button></a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link button3"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/users';">Account Manager</button></a>
+                  <a class="nav-link button4"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/users';">Account Manager</button></a>
                </li>
             </ul>
             <ul class="navbar-nav navbar-right">
@@ -47,7 +54,7 @@
             </ul>
          </div>
       </nav>
-      <p>Changes!!<p>
+   
       <div class="container-fluid text-left">    
       <div class="row content">
       <div class="col-sm-2 sidenav">
@@ -60,7 +67,7 @@
                   
                      <!-- Put Drop Down Here -->
                      <select name="s_id" style="width: 100%;">
-                        <option value="0">All Schools</option>
+                        <option value="0" selected>All Schools</option>
                         <option value="0061">MATTIE V RUTHERFORD ALT ED CTR</option>
                         <option value="0141">GRAND PARK CAREER CENTER</option>
                         <!-- Works minus Diversity-->
@@ -178,21 +185,20 @@
                         <!-- Doesn't Works -->
                      </select>
                      <br><br>
-                     <?php echo "Currently Displaying: School #".$_POST['s_id']."'s Student Data" ; ?>
-                     
-                     <br><br>
+                     <?php echo "Currently Displaying: ".$_POST['s_id']."'s Student Data" ; ?>
                      <button type="submit">Update Charts</button>
+</div>
                     
-            </div>
+            
         
         <!--Card deck-->
-        <div class="col-sm-9 text-left">
+        <div class="col-sm-8 text-left">
                   <br>
                   <h2 class="text-center">Dashboard</h2>
                   <div class="card-deck center-align">
-                     <div class="row">
+                     
                         <!--card-->
-                        <div class="card mb-4 shadow p-3 mb-5 bg-white rounded width=100%">
+                        <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
                            <div class="card-body center">
                               <h4 class="card-title text-center">Grade Level</h4>
                         <div id="piechart"></div>
@@ -271,8 +277,159 @@
                                  include 'ChartView.php'; ?>
                               </div>
                               </div>
-                              
-                              
+                              <!--Card-->
+                              <div class="row">
+                              <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                           <div class="card-body center">
+                              <h4 class="card-title text-center">AFL</h4>
+                              <div id="piechart4"></div>
+                              <?php $field = "piechart4"; 
+                                 $school = $_POST['s_id']; 
+                                 $fieldArray = fieldCount('AFL', 'tbl_name',$school);
+                                 $arrayA = [];
+                                 $arrayB = [];
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayA,$fieldArray[$i]["AFL"]);
+                                 $i++;
+                                 } 
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayB,$fieldArray[$i]['count']);
+                                 $i++;
+                                 } 
+                                 include 'ChartView.php'; ?>
+                              </div>
+                              </div>
+                              <!--Card-->
+                              <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                           <div class="card-body center">
+                              <h4 class="card-title text-center">After School</h4>
+                              <div id="piechart5"></div>
+                              <?php $field = "piechart5"; 
+                                 $school = $_POST['s_id']; 
+                                 $fieldArray = fieldCount('After_School', 'tbl_name',$school);
+                                 $arrayA = [];
+                                 $arrayB = [];
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayA,$fieldArray[$i]["After_School"]);
+                                 $i++;
+                                 } 
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayB,$fieldArray[$i]['count']);
+                                 $i++;
+                                 } 
+                                 include 'ChartView.php'; ?>
+                              </div>
+                              </div>
+                              <!--Card-->
+                              <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                           <div class="card-body center">
+                              <h4 class="card-title text-center">AmeriCorps</h4>
+                              <div id="piechart6"></div>
+                              <?php $field = "piechart6"; 
+                                 $school = $_POST['s_id']; 
+                                 $fieldArray = fieldCount('AmeriCorps', 'tbl_name',$school);
+                                 $arrayA = [];
+                                 $arrayB = [];
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayA,$fieldArray[$i]["AmeriCorps"]);
+                                 $i++;
+                                 } 
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayB,$fieldArray[$i]['count']);
+                                 $i++;
+                                 } 
+                                 include 'ChartView.php'; ?>
+                              </div>
+                              </div>
+                              </div>
+                           <!--Card-->
+                              <div class="row">
+                           <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                           <div class="card-body center">
+                              <h4 class="card-title text-center">BTS</h4>
+                              <div id="piechart7"></div>
+                              <?php $field = "piechart7"; 
+                                 $school = $_POST['s_id']; 
+                                 $fieldArray = fieldCount('BTS', 'tbl_name',$school);
+                                 $arrayA = [];
+                                 $arrayB = [];
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayA,$fieldArray[$i]["BTS"]);
+                                 $i++;
+                                 } 
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayB,$fieldArray[$i]['count']);
+                                 $i++;
+                                 } 
+                                 include 'ChartView.php'; ?>
+                              </div>
+                              </div>
+                              <!--Card-->
+                              <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                           <div class="card-body center">
+                              <h4 class="card-title text-center">Gear Up</h4>
+                              <div id="piechart8"></div>
+                              <?php $field = "piechart8"; 
+                                 $school = $_POST['s_id']; 
+                                 $fieldArray = fieldCount('Gear_Up', 'tbl_name',$school);
+                                 $arrayA = [];
+                                 $arrayB = [];
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayA,$fieldArray[$i]["Gear_Up"]);
+                                 $i++;
+                                 } 
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayB,$fieldArray[$i]['count']);
+                                 $i++;
+                                 } 
+                                 include 'ChartView.php'; ?>
+                              </div>
+                              </div>
+                                       <!--Card-->
+                                       <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                           <div class="card-body center">
+                              <h4 class="card-title text-center">SEP</h4>
+                              <div id="piechart9"></div>
+                              <?php $field = "piechart9"; 
+                                 $school = $_POST['s_id']; 
+                                 $fieldArray = fieldCount('SEP', 'tbl_name',$school);
+                                 $arrayA = [];
+                                 $arrayB = [];
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayA,$fieldArray[$i]["SEP"]);
+                                 $i++;
+                                 } 
+                                 $i = 1;
+                                 while($i<count($fieldArray))
+                                 {
+                                 array_push($arrayB,$fieldArray[$i]['count']);
+                                 $i++;
+                                 } 
+                                 include 'ChartView.php'; ?>
+                              </div>
+                              </div>
                               </div>
                            </div>
                         </div>
@@ -280,8 +437,8 @@
                               </div>
                               </div>
                               </div>
+                              </div>
                
-         <script language = "JavaScript"></script>
       </form>
    </body>
 </html>
