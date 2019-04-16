@@ -40,9 +40,9 @@ if($PASSWORD) {
 	}
 }
 
-chdir('C:\xampp\htdocs');
+//chdir('C:\xampp\htdocs');
 //chdir('C:\xampp\htdocs\simsdemo\application\files');
-//chdir('D:\home\site\wwwroot\application\files');
+chdir('D:\home\site\wwwroot\application\files');
 
 // must be in UTF-8 or `basename` doesn't work
 setlocale(LC_ALL,'en_US.UTF-8');
