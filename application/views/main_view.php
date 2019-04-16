@@ -187,7 +187,7 @@
                      <button type="submit">Update Charts</button>
 </div>
                     
-            </div>
+            
         
         <!--Card deck-->
         <div class="col-sm-8 text-left">
@@ -305,6 +305,7 @@
                               
                            </div>
                         </div>
+                              </div>
                               </div>
                               </div>
                               </div>

@@ -475,7 +475,7 @@ function myFunction(){
 	<br>
 	<h2 class="text-center">File Manager</h2>
 	<?php if($allow_upload): ?>
-				<div class="align-left" id="file_drop_target">
+				<div class="mr-auto" id="file_drop_target">
 					Drag Files Here To Upload
 					<b>or</b>
 					<input type="file" multiple />
@@ -483,14 +483,14 @@ function myFunction(){
 					</div>
 					<?php endif; ?>
 
-					<br>
-				<div class="align-right" id="top">
+					
+				<div class="ml-auto" id="top">
    					<?php if($allow_create_folder): ?>
 						<form action="?" method="post" id="mkdir" >
 						<label for=dirname>Create New Folder</label><input id=dirname type=text name=name value="" />
 						<input type="submit" value="create" />
 						<br>
-						<br>
+						
 						</form>
 				</div>
 
