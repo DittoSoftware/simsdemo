@@ -507,9 +507,9 @@ $(function(){
 			<div class="col-sm-2 sidenav">
 				<br>
 				<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
-				<p>Changes!<p>
+				
 			</div>	
-<div id="top">
+<div class ="mr-auto" id="top">
    <?php if($allow_create_folder): ?>
 	<form action="?" method="post" id="mkdir" />
 		<label for=dirname>Create New Folder</label><input id=dirname type=text name=name value="" />
