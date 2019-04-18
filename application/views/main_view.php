@@ -295,7 +295,8 @@
                            <div class="card-body center">
                               <h4 class="card-title text-center">AFL</h4>
                               <div id="piechart4"></div>
-                              <?php $field = "piechart4"; 
+                              <?php $field = "piechart4";
+                                 $topic = "AFL Participation";
                                  $school = $_POST['s_id']; 
                                  $fieldArray = fieldCount('AFL', 'tbl_name',$school);
                                  $arrayA = [];
@@ -320,7 +321,8 @@
                            <div class="card-body center">
                               <h4 class="card-title text-center">After School</h4>
                               <div id="piechart5"></div>
-                              <?php $field = "piechart5"; 
+                              <?php $field = "piechart5";
+                                 $topic = "After School Participation"; 
                                  $school = $_POST['s_id']; 
                                  $fieldArray = fieldCount('After_School', 'tbl_name',$school);
                                  $arrayA = [];
@@ -346,6 +348,7 @@
                               <h4 class="card-title text-center">AmeriCorps</h4>
                               <div id="piechart6"></div>
                               <?php $field = "piechart6"; 
+                              $topic = "AmeriCorps Participation";
                                  $school = $_POST['s_id']; 
                                  $fieldArray = fieldCount('AmeriCorps', 'tbl_name',$school);
                                  $arrayA = [];
@@ -373,6 +376,7 @@
                               <h4 class="card-title text-center">BTS</h4>
                               <div id="piechart7"></div>
                               <?php $field = "piechart7"; 
+                                 $topic = "BTS Participation";
                                  $school = $_POST['s_id']; 
                                  $fieldArray = fieldCount('BTS', 'tbl_name',$school);
                                  $arrayA = [];
@@ -398,6 +402,7 @@
                               <h4 class="card-title text-center">Gear Up</h4>
                               <div id="piechart8"></div>
                               <?php $field = "piechart8"; 
+                              $topic = "Gear Up Participation";
                                  $school = $_POST['s_id']; 
                                  $fieldArray = fieldCount('Gear_Up', 'tbl_name',$school);
                                  $arrayA = [];
@@ -423,6 +428,7 @@
                               <h4 class="card-title text-center">SEP</h4>
                               <div id="piechart9"></div>
                               <?php $field = "piechart9"; 
+                              $topic = "SEP Participation";
                                  $school = $_POST['s_id']; 
                                  $fieldArray = fieldCount('SEP', 'tbl_name',$school);
                                  $arrayA = [];
