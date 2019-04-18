@@ -441,7 +441,7 @@ $(function(){
 	}
 	function renderBreadcrumbs(path) {
 		var base = "",
-			$html = $('<div/>').append( $('<a href=#>Home</a></div>') );
+			$html = $('<div/>').append( $('<a href=#></a></div>') );
 		$.each(path.split('%2F'),function(k,v){
 			if(v) {
 				var v_as_text = decodeURIComponent(v);
