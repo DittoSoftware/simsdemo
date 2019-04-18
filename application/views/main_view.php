@@ -193,6 +193,12 @@
                               $school = $_POST['s_id']; 
                               $pres = metricCount('Days_Absent','tbl_name',$school);
                               echo "Number of Absents equal to ".$pres[1]["Days_Absent"].": ".$pres[1]["count"];
+                              echo "Number of Absents equal to ".$pres[2]["Days_Absent"].": ".$pres[2]["count"];
+                              echo "Number of Absents equal to ".$pres[3]["Days_Absent"].": ".$pres[3]["count"];
+                              echo "Number of Absents equal to ".$pres[4]["Days_Absent"].": ".$pres[4]["count"];
+                              echo "Number of Absents equal to ".$pres[5]["Days_Absent"].": ".$pres[5]["count"];
+                              echo "Number of Absents equal to ".$pres[6]["Days_Absent"].": ".$pres[6]["count"];
+                              echo "Number of Absents equal to ".$pres[7]["Days_Absent"].": ".$pres[7]["count"];
                              
                         ?>    
 </div>       
