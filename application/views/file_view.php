@@ -509,7 +509,7 @@ $(function(){
 				<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
 				
 			</div>	
-<div class ="ml-auto" id="top">
+<div class ="mr-auto" id="top">
    <?php if($allow_create_folder): ?>
 	<form action="?" method="post" id="mkdir" />
 		<label for=dirname>Create New Folder</label><input id=dirname type=text name=name value="" />
@@ -520,7 +520,7 @@ $(function(){
 
    <?php if($allow_upload): ?>
 </div>
-	<div class="mr-auto" id="file_drop_target">
+	<div id="file_drop_target">
 		Drag Files Here To Upload
 		<b>or</b>
 		<input type="file" multiple />
