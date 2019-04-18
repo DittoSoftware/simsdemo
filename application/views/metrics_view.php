@@ -28,7 +28,11 @@ try{
     // $results[1][$field] $results[1]['count']
     // $results[2][$field] $results[2]['count']
     // with each row as an array of values within a numeric array of all rows
-
+    echo '<pre>' . print_r($result, TRUE) . '</pre>';
+    foreach ($result as $key => $item) {
+        $username = $item['username'];
+        echo '<input type="radio" name="president" value="' . $username . '">' . $username . '</input>';
+    }
     $dbh = null;
 }
 catch(PDOException $e)
