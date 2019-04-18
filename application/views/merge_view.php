@@ -53,6 +53,11 @@ if(!isset($_SESSION['username'])){
                   <a class="nav-link button4"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/users';">Account Manager</button></a>
                </li>
             </ul>
+            <ul class="navbar-nav navbar-right">
+               <li class="nav-item">
+                  <a class="nav-link logoutButton"><button type="button"  onclick="location.href='https://cissimsdev.azurewebsites.net/index.php/signin/logout';">Logout</button></a>
+               </li>
+            </ul>
 	  </div>
     </div>
   </div>
