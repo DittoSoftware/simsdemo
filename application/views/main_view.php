@@ -192,7 +192,7 @@
                         <?php
                               $school = $_POST['s_id']; 
                               $pres = metricCount('Days_Absent','tbl_name',$school);
-                              echo print_r($pres, TRUE);
+                              echo implode(" ",$pres);
                         ?>    
 </div>       
             
