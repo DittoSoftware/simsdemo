@@ -195,7 +195,7 @@
                         <?php
                               $school = $_POST['s_id']; 
                               $pres = metricCount('Days_Absent','tbl_name',$school);
-                              echo implode(" ",$pres);
+                              echo implode("|",$pres);
 
                         ?>
                         </div>           
