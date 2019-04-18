@@ -509,16 +509,7 @@ $(function(){
 				<img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
 				<p>Changes!<p>
 			</div>	
-
-	<div id="file_drop_target">
-		Drag Files Here To Upload
-		<b>or</b>
-		<input type="file" multiple />
-	</div>
-   <?php endif; ?>
-	<div id="breadcrumb">&nbsp;</div>
-</div>
-<div class="mr-auto" id="top">
+<div id="top">
    <?php if($allow_create_folder): ?>
 	<form action="?" method="post" id="mkdir" />
 		<label for=dirname>Create New Folder</label><input id=dirname type=text name=name value="" />
@@ -528,6 +519,14 @@ $(function(){
    <?php endif; ?>
 
    <?php if($allow_upload): ?>
+</div>
+	<div id="file_drop_target">
+		Drag Files Here To Upload
+		<b>or</b>
+		<input type="file" multiple />
+	</div>
+   <?php endif; ?>
+	<div id="breadcrumb">&nbsp;</div>
 </div>
 
 <div id="upload_progress"></div>
