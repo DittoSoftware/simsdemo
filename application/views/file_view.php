@@ -500,7 +500,7 @@ $(function(){
 				</div>
 			
 			</nav>
-
+	<br>
 	<div class="window">
 	<div class="container-fluid text-center">
 			<div class="row content">
