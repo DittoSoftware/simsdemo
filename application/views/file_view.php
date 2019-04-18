@@ -526,7 +526,8 @@ $(function(){
 </div>
 
 <div id="upload_progress"></div>
-<table id="table"><thead><tr>
+<!--	<table id="table"><thead><tr>	-->
+<table id="table" class="table table-bordered table-striped width=100% shadow p-3 mb-5 bg-white rounded"><thead><tr>
 	<th>Name</th>
 	<th>Size</th>
 	<th>Modified</th>
