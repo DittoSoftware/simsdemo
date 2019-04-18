@@ -40,9 +40,9 @@ if($PASSWORD) {
 	}
 }
 
-chdir('C:\xampp\htdocs');
+//chdir('C:\xampp\htdocs');
 //chdir('C:\xampp\htdocs\simsdemo\application\files');
-//chdir('D:\home\site\wwwroot\application\files');
+chdir('D:\home\site\wwwroot\application\files');
 
 // must be in UTF-8 or `basename` doesn't work
 setlocale(LC_ALL,'en_US.UTF-8');
@@ -234,7 +234,7 @@ label { display:block; font-size:11px; color:#555;}
 .progress {background-color: #82CFFA;height:10px; }
 footer {font-size:11px; color:#bbbbc5; padding:4em 0 0;text-align: left;}
 footer a, footer a:visited {color:#bbbbc5;}
-#breadcrumb { padding-top:34px; font-size:15px; color:#aaa;display:inline-block;float:left;}
+#breadcrumb {padding-top:5px;font-size:15px; color:#aaa;display:inline-block;float:left;}
 #folder_actions {width: 50%;float:right;}
 a, a:visited { color:#00c; text-decoration: none}
 a:hover {text-decoration: underline}
@@ -524,8 +524,11 @@ $(function(){
    
 <div id="upload_progress"></div>
 </div>
+<h5 style="float:left; padding-right:5px;">Current Folder: <h5>
+<div id="breadcrumb">
 
-<div id="breadcrumb">&nbsp;</div>
+&nbsp;
+</div>
 </div>
 
 <table id="table"><thead><tr>
