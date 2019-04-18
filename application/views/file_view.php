@@ -224,7 +224,7 @@ thead {border-top: 1px solid #82CFFA; border-bottom: 1px solid #96C4EA;border-le
 #mkdir {display:inline-block;float:right;padding-top:16px;}
 label { display:block; font-size:11px; color:#555;}
 #file_drop_target {width:500px; padding:12px 0; border: 4px dashed #ccc;font-size:12px;color:#ccc;
-	text-align: center;float:right;margin-right:20px;}
+	text-align: center;float:right;margin-left:20px;}
 #file_drop_target.drag_over {border: 4px dashed #96C4EA; color: #96C4EA;}
 #upload_progress {padding: 4px 0;}
 #upload_progress .error {color:#a00;}
@@ -525,6 +525,7 @@ $(function(){
 </div>
 
 <div id="upload_progress"></div>
+</div>
 <table id="table"><thead><tr>
 	<th>Name</th>
 	<th>Size</th>
