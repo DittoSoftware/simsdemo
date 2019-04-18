@@ -188,7 +188,7 @@
                      <br><br>
                      <?php echo "Currently Displaying: ".$_POST['s_id']."'s Student Data" ; ?>
                      <button type="submit">Update Charts</button>
-                     <h4 class="card-title text-center">Attendence</h4>
+                     <h4>Attendence</h4>
                         <?php
                               $school = $_POST['s_id']; 
                               $pres = metricCount('Days_Absent','tbl_name',$school);
