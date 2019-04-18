@@ -23,7 +23,6 @@ try{
     }
 
     $results=$stmt->fetchAll(PDO::FETCH_ASSOC);
-    echo $results;
     // Creates an array similar as the following:
     // $results[0][$field] $results[0]['count']
     // $results[1][$field] $results[1]['count']

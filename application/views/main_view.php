@@ -189,7 +189,16 @@
                      <?php echo "Currently Displaying: ".$_POST['s_id']."'s Student Data" ; ?>
                      <button type="submit">Update Charts</button>
 </div>
-                    
+<div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                           <div class="card-body center">
+                              <h4 class="card-title text-center">Grade Level</h4>
+                        <?php
+                              $school = $_POST['s_id']; 
+                              $pres = metricCount('Days_Absent','tbl_name',$school);
+                              echo "The Number is " + $pres + ".";
+
+                        ?>
+                        </div>           
             
         
         <!--Card deck-->
@@ -197,19 +206,7 @@
                   <br>
                   <h2 class="text-center">Dashboard</h2>
                   <div class="card-deck center-align">
-                     <!--card-->
-                     <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
-                           <div class="card-body center">
-                              <h4 class="card-title text-center">Grade Level</h4>
-                        <?php
-                              $school = $_POST['s_id']; 
-                              $pres = metricCount('Days_Absent','tbl_name',$school);
-                              echo $pres;
-
-                        ?>
-                        </div>
-                        </div>
-                        <!--card-->
+                      <!--card-->
                         <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
                            <div class="card-body center">
                               <h4 class="card-title text-center">Grade Level</h4>
