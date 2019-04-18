@@ -23,6 +23,7 @@ try{
     }
 
     $results=$stmt->fetchAll(PDO::FETCH_ASSOC);
+    $results=strcmp($result[$field], [string]);
     // Creates an array similar as the following:
     // $results[0][$field] $results[0]['count']
     // $results[1][$field] $results[1]['count']
@@ -36,6 +37,6 @@ catch(PDOException $e)
 echo $e->getMessage();
 }
 
-return strcmp($result[$field], [string]);
+return $results;
 }
 ?>
