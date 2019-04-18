@@ -428,7 +428,7 @@
                               <h4 class="card-title text-center">SEP</h4>
                               <div id="piechart9"></div>
                               <?php $field = "piechart9"; 
-                              $topic = "SEP Participation";
+                              $topic = "SEP   Participation";
                                  $school = $_POST['s_id']; 
                                  $fieldArray = fieldCount('SEP', 'tbl_name',$school);
                                  $arrayA = [];
