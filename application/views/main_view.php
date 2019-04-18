@@ -189,15 +189,13 @@
                      <?php echo "Currently Displaying: ".$_POST['s_id']."'s Student Data" ; ?>
                      <button type="submit">Update Charts</button>
                      <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
-                           <div class="card-body center">
-                              <h4 class="card-title text-center">Attendence</h4>
+                     <h4 class="card-title text-center">Attendence</h4>
                         <?php
                               $school = $_POST['s_id']; 
                               $pres = metricCount('Days_Absent','tbl_name',$school);
                               print_r($pres, TRUE);
                         ?>
-                        </div>  
-                        </div>  
+                        </div>    
 </div>       
             
         
