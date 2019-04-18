@@ -196,15 +196,17 @@
                   <br>
                   <h2 class="text-center">Dashboard</h2>
                   <div class="card-deck center-align">
+
                   <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
                            <div class="card-body center">
-                              <h4 class="card-title text-center">Grade Level</h4>
+                              <h4 class="card-title text-center">Attendence</h4>
                         <?php
                               $school = $_POST['s_id']; 
                               $pres = metricCount('Days_Absent','tbl_name',$school);
                               print_r($pres, TRUE);
                         ?>
-                        </div>    
+                        </div>  
+                        </div>  
                       <!--card-->
                         <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
                            <div class="card-body center">
