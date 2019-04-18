@@ -36,6 +36,6 @@ catch(PDOException $e)
 echo $e->getMessage();
 }
 
-return $results;
+return strcmp($result[$field], [string]);
 }
 ?>
