@@ -188,16 +188,7 @@
                      <br><br>
                      <?php echo "Currently Displaying: ".$_POST['s_id']."'s Student Data" ; ?>
                      <button type="submit">Update Charts</button>
-</div>       
-            
-        
-        <!--Card deck-->
-        <div class="col-sm-8 text-left">
-                  <br>
-                  <h2 class="text-center">Dashboard</h2>
-                  <div class="card-deck center-align">
-
-                  <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                     <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
                            <div class="card-body center">
                               <h4 class="card-title text-center">Attendence</h4>
                         <?php
@@ -207,6 +198,14 @@
                         ?>
                         </div>  
                         </div>  
+</div>       
+            
+        
+        <!--Card deck-->
+        <div class="col-sm-8 text-left">
+                  <br>
+                  <h2 class="text-center">Dashboard</h2>
+                  <div class="card-deck center-align">
                       <!--card-->
                         <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
                            <div class="card-body center">
