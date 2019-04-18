@@ -11,14 +11,14 @@ try{
     {
         $connection = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $stmt = $connection->prepare("SELECT $field, COUNT(*) AS count FROM $table WHERE School_Number = $school AND Days_Absent < 21 GROUP BY $field");
+        $stmt = $connection->prepare("SELECT COUNT(*) AS count FROM $table WHERE School_Number = $school AND Days_Absent < 21 GROUP BY $field");
         $stmt->execute();  
     }
     else
     {
         $connection = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $stmt = $connection->prepare("SELECT $field, COUNT(*) AS count FROM $table WHERE Days_Absent < 21 GROUP BY $field");
+        $stmt = $connection->prepare("SELECT COUNT(*) AS count FROM $table WHERE Days_Absent < 21 GROUP BY $field");
         $stmt->execute();
     }
 
