@@ -40,9 +40,9 @@ if($PASSWORD) {
 	}
 }
 
-//chdir('C:\xampp\htdocs');
+chdir('C:\xampp\htdocs');
 //chdir('C:\xampp\htdocs\simsdemo\application\files');
-chdir('D:\home\site\wwwroot\application\files');
+//chdir('D:\home\site\wwwroot\application\files');
 
 // must be in UTF-8 or `basename` doesn't work
 setlocale(LC_ALL,'en_US.UTF-8');
@@ -220,12 +220,12 @@ th {font-weight: normal; color: #1F75CC; background-color: #F0F9FF; padding:.5em
 th .indicator {margin-left: 6px }
 thead {border-top: 1px solid #82CFFA; border-bottom: 1px solid #96C4EA;border-left: 1px solid #E7F2FB;
 	border-right: 1px solid #E7F2FB; }
-#top {height:52px;}
+#top {height:52px;float:right;}
 #mkdir {display:inline-block;float:right;padding-top:16px;}
 label { display:block; font-size:11px; color:#555;}
 #file_drop_target {width:500px; padding:12px 0; border: 4px dashed #ccc;font-size:12px;color:#ccc;
-	text-align: center;float:right;margin-left:20px;}
-#file_drop_target.drag_over {border: 4px dashed #96C4EA; color: #96C4EA;}
+	text-align: center;margin-left:20px;}
+#file_drop_target.drag_over {border: 4px dashed #96C4EA; color: #96C4EA;margin-right:20px;}
 #upload_progress {padding: 4px 0;}
 #upload_progress .error {color:#a00;}
 #upload_progress > div { padding:3px 0;}
@@ -441,7 +441,7 @@ $(function(){
 	}
 	function renderBreadcrumbs(path) {
 		var base = "",
-			$html = $('<div/>').append( $('<a href=#></a></div>') );
+			$html = $('<div/>').append( $('<a href=#>Home</a></div>') );
 		$.each(path.split('%2F'),function(k,v){
 			if(v) {
 				var v_as_text = decodeURIComponent(v);
@@ -521,11 +521,13 @@ $(function(){
 		<input type="file" multiple />
 	</div>
    <?php endif; ?>
-	<div id="breadcrumb">&nbsp;</div>
-</div>
-
+   
 <div id="upload_progress"></div>
 </div>
+
+<div id="breadcrumb">&nbsp;</div>
+</div>
+
 <table id="table"><thead><tr>
 	<th>Name</th>
 	<th>Size</th>
