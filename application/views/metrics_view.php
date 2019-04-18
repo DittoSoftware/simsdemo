@@ -29,6 +29,7 @@ try{
     // $results[2][$field] $results[2]['count']
     // with each row as an array of values within a numeric array of all rows
     $dbh = null;
+
 }
 catch(PDOException $e)
 {
