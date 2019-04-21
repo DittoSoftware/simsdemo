@@ -18,7 +18,7 @@ if(isset($_POST['username'])){
 
 
     $result=mysqli_query($con,$sql);
-    $access=mysql_query($con, $role);
+    $access=mysqli_query($con, $role);
 
     if(mysqli_num_rows($result) == 1){
         // echo "Successful Login";
