@@ -94,7 +94,11 @@ if(!isset($_SESSION['username'])){
 				</div>
 				<div class="form-group">
 					<label>Role:</label>
-					<input type="number" class="form-control" name="role">
+					<!-- <input type="number" class="form-control" name="role"> -->
+					<select name="role" class="form-control">
+						<option value="Admin">Admin</option>
+						<option value="User">Dashboard User</option>
+					</select>
 				</div>
 				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
 			</form>
