@@ -39,9 +39,9 @@ if($PASSWORD) {
 // must be in UTF-8 or `basename` doesn't work
 setlocale(LC_ALL,'en_US.UTF-8');
 
-chdir('C:\xampp\htdocs');
+//chdir('C:\xampp\htdocs');
 //chdir('C:\xampp\htdocs\simsdemo\application\files');
-//chdir('D:\home\site\wwwroot\application\files');
+chdir('D:\home\site\wwwroot\application\files');
 
 
 $tmp_dir = dirname($_SERVER['SCRIPT_FILENAME']);
