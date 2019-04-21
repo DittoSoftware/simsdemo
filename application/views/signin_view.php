@@ -29,14 +29,16 @@ if(isset($_POST['username'])){
         echo mysqli_data_seek($access, 1);
 
         if(mysqli_data_seek($access, 1) =='Admin'){
-            session_start();
-            $_SESSION['username'] = $_POST['username'];
-            header('Location: main');
+            // session_start();
+            // $_SESSION['username'] = $_POST['username'];
+            // header('Location: main');
+            echo mysqli_data_seek($access, 1);
         }
         else{
-            session_start();
-            $_SESSION['username'] = $_POST['username'];
-            header('Location: dashboard');
+            // session_start();
+            // $_SESSION['username'] = $_POST['username'];
+            // header('Location: dashboard');
+            echo mysqli_data_seek($access, 1);
         }
     }
     else{
