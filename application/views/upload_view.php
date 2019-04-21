@@ -480,6 +480,7 @@ function validate(){
 	<br>
 	<br>
 	<div id="password_box" onsubmit="return false;" style="display:block">
+		<h5>Enter Upload Password:</h5>
 		<form id="form">
 			<input type="password" id="pass" name="password">
 		   	<input type="submit" value="Submit" onClick="validate()">
