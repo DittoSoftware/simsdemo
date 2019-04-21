@@ -26,8 +26,8 @@ if(isset($_POST['username'])){
         // session_start();
         // $_SESSION['username'] = $_POST['username'];
 
-        echo mysqli_data_seek($access, 1);
-
+        $a =  mysqli_data_seek($access, 1);
+        echo "<script type='text/javascript'>alert('$a');</script>";
         if(mysqli_data_seek($access, 1) =='Admin'){
             // session_start();
             // $_SESSION['username'] = $_POST['username'];
