@@ -18,7 +18,7 @@ if(isset($_POST['username'])){
 
 
     $result=mysqli_query($con,$sql);
-    $access=mysqli_result($con, $role);
+    $access=mysqli_query($con, $role);
 
     if(mysqli_num_rows($result) == 1){
         // echo "Successful Login";
@@ -26,7 +26,7 @@ if(isset($_POST['username'])){
         // session_start();
         // $_SESSION['username'] = $_POST['username'];
 
-        if($access =='Admin'){
+        if(mysqli_data_seek($access, 1) =='Admin'){
             session_start();
             $_SESSION['username'] = $_POST['username'];
             header('Location: main');
