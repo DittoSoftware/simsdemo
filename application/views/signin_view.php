@@ -9,8 +9,8 @@ if(isset($_POST['username'])){
     $username=$_POST['username'];
     $password=$_POST['password'];
     
-    $sql1="select * from users where username='".$username."'AND password='".$password." and role='Admin'' limit 1";
-    $sql2="select * from users where username='".$username."'AND password='".$password." and role='User'' limit 1";
+    $sql1="select * from users where username='".$username."'AND password='".$password."' and role='Admin' limit 1";
+    $sql2="select * from users where username='".$username."'AND password='".$password."' and role='User' limit 1";
 
     $result1=mysqli_query($con,$sql1);
     $result2=mysqli_query($con,$sql2);
