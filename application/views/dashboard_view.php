@@ -49,7 +49,7 @@
               <img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
               <br><br>
             
-          <form method="POST" action="main?action=s_id=">
+          <form method="POST" action="dashboard?action=s_id=">
                   Select School Demographics:
                   
                      <!-- Put Drop Down Here -->
