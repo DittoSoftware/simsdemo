@@ -36,6 +36,11 @@ if(!isset($_SESSION['username'])){
 
 <link rel="stylesheet" href="<?php echo base_url();?>CSS/buttons.dataTables.min.css">
 <link rel="stylesheet" href="<?php echo base_url();?>CSS/jquery.dataTables.min.css">
+<style>
+.navbut{
+color:black;
+}
+</style>
 </head>
 <!-- <body class="keen-dashboard" style="padding-top: 80px;">
 
@@ -84,24 +89,24 @@ if(!isset($_SESSION['username'])){
          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                <li class="nav-item active">
-                  <a class="nav-link button1"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/main';">Dashboard</button></a>
+                  <a class="nav-link button1"><button class="navbut" type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/main';">Dashboard</button></a>
                </li>
                <li class="nav-item">
-							<a class="nav-link button2"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/filemanager';">File Manager</button></a>
+							<a class="nav-link button2"><button class="navbut" type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/filemanager';">File Manager</button></a>
 						</li>
                <li class="nav-item">
-                  <a class="nav-link button3"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/loadvw';">File Merge</button></a>
+                  <a class="nav-link button3"><button class="navbut" type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/loadvw';">File Merge</button></a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link button4"><button type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/users';">Account Manager</button></a>
+                  <a class="nav-link button4"><button class="navbut" type="button" onclick="window.location.href='https://cissimsdev.azurewebsites.net/index.php/users';">Account Manager</button></a>
                </li>
             </ul>
             <ul class="navbar-nav navbar-right">
 			<li class="nav-item">
-			<a class="nav-link logoutButton" href='https://www.youtube.com/playlist?list=PL0Xo9pCPuP1DMASxO36O8oLRdDvY1g5IA' target="_blank"><button type="button"  ;">Help</button></a>
+			<a class="nav-link logoutButton" href='https://www.youtube.com/playlist?list=PL0Xo9pCPuP1DMASxO36O8oLRdDvY1g5IA' target="_blank"><button type="button"  class="navbut" >Help</button></a>
 			   </li>
 			   <li class="nav-item">	
-                  <a class="nav-link logoutButton"><button type="button"  onclick="location.href='https://cissimsdev.azurewebsites.net/index.php/signin/logout';">Logout</button></a>
+                  <a class="nav-link logoutButton"><button class="navbut" type="button"  onclick="location.href='https://cissimsdev.azurewebsites.net/index.php/signin/logout';">Logout</button></a>
                </li>
             </ul>
          </div>
