@@ -68,7 +68,7 @@
                   
                      <!-- Put Drop Down Here -->
                      <select name="s_id" style="width: 100%;">
-                     <select input type ="text" name = "School Option"value="<?php echo $_SESSION['s_id'] ?>" >
+                     <select input type ="text" name = "School Option"value="<?php echo $_POST['s_id'] ?>" >
                         <option value="0">All Schools</option>
                         <option value="0061">MATTIE V RUTHERFORD ALT ED CTR</option>
                         <option value="0141">GRAND PARK CAREER CENTER</option>
