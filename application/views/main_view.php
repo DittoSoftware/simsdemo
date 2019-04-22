@@ -333,7 +333,7 @@
                               </div>
                               </div>
                               <!--Card-->
-                              <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                              <div class="card mb-4 shadow p-3 mb-5 bg-white rounded ml-auto">
                            <div class="card-body center">
                               <h4 class="card-title text-center">AmeriCorps</h4>
                               <div id="piechart6"></div>
