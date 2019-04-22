@@ -70,8 +70,8 @@
                   Select School Demographics:
                   
                      <!-- Put Drop Down Here -->
-                     <select name="s_id" style="width: 100%;">
-                        <option value="0" selected>All Schools</option>
+                     <select input type ="text" name = "s_id" style="width: 100%;">
+                        <option value="0">All Schools</option>
                         <option value="0061">MATTIE V RUTHERFORD ALT ED CTR</option>
                         <option value="0141">GRAND PARK CAREER CENTER</option>
                         <!-- Works minus Diversity-->
@@ -191,20 +191,7 @@
                      <br><br>
                      <?php echo "Currently Displaying: ".$_POST['s_id']."'s Student Data" ; ?>
                      <button type="submit">Update Charts</button><br><br>
-                     <h4 class="card-title text-center">Attendence</h4>
-                        <?php
-                              $school = $_POST['s_id']; 
-                              $pres = metricCount('Days_Absent','tbl_name',$school);
-                              echo "Number of Absents equal to ".$pres[1]["Days_Absent"].": ".$pres[1]["count"]."<br><br>";
-                              echo "Number of Absents equal to ".$pres[2]["Days_Absent"].": ".$pres[2]["count"]."<br><br>";
-                              echo "Number of Absents equal to ".$pres[3]["Days_Absent"].": ".$pres[3]["count"]."<br><br>";
-                              echo "Number of Absents equal to ".$pres[4]["Days_Absent"].": ".$pres[4]["count"]."<br><br>";
-                              echo "Number of Absents equal to ".$pres[5]["Days_Absent"].": ".$pres[5]["count"]."<br><br>";
-                              echo "Number of Absents equal to ".$pres[6]["Days_Absent"].": ".$pres[6]["count"]."<br><br>";
-                              echo "Number of Absents equal to ".$pres[7]["Days_Absent"].": ".$pres[7]["count"]."<br><br>";
-                             
-                        ?>    
-</div>       
+                     </div>       
             
         
         <!--Card deck-->
@@ -431,7 +418,7 @@
                               <h4 class="card-title text-center">SEP</h4>
                               <div id="piechart9"></div>
                               <?php $field = "piechart9"; 
-                              $topic = "SEP   Participation";
+                              $topic = "SEP Participation";
                                  $school = $_POST['s_id']; 
                                  $fieldArray = fieldCount('SEP', 'tbl_name',$school);
                                  $arrayA = [];
