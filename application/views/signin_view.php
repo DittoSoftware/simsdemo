@@ -8,19 +8,26 @@ mysqli_select_db($con, 'csv_db');
 if(isset($_POST['username'])){
     $username=$_POST['username'];
     $password=$_POST['password'];
+    
+    $sql1="select * from users where username='".$username."'AND password='".$password."' and role='Admin' limit 1";
+    $sql2="select * from users where username='".$username."'AND password='".$password."' and role='User' limit 1";
 
-    $sql="select * from users where username='".$username."'AND password='".$password."' limit 1";
-    // $result="select * from users where username='".$username."'AND password='".$password."' limit 1";
+    $result1=mysqli_query($con,$sql1);
+    $result2=mysqli_query($con,$sql2);
 
-
-    $result=mysqli_query($con,$sql);
-
-    if(mysqli_num_rows($result) == 1){
+    if(mysqli_num_rows($result1) == 1){
         // echo "Successful Login";
         // exit();
         session_start();
         $_SESSION['username'] = $_POST['username'];
         header('Location: main');
+    }
+    elseif(mysqli_num_rows($result2) == 1){
+        // echo "Successful Login";
+        // exit();
+        session_start();
+        $_SESSION['username'] = $_POST['username'];
+        header('Location: dashboard');
     }
     else{
 

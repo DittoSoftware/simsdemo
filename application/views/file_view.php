@@ -220,12 +220,12 @@ th {font-weight: normal; color: #1F75CC; background-color: #F0F9FF; padding:.5em
 th .indicator {margin-left: 6px }
 thead {border-top: 1px solid #82CFFA; border-bottom: 1px solid #96C4EA;border-left: 1px solid #E7F2FB;
 	border-right: 1px solid #E7F2FB; }
-#top {height:52px;}
+#top {height:52px;float:right;}
 #mkdir {display:inline-block;float:right;padding-top:16px;}
 label { display:block; font-size:11px; color:#555;}
 #file_drop_target {width:500px; padding:12px 0; border: 4px dashed #ccc;font-size:12px;color:#ccc;
-	text-align: center;float:right;margin-right:20px;}
-#file_drop_target.drag_over {border: 4px dashed #96C4EA; color: #96C4EA;}
+	text-align: center;margin-left:20px;}
+#file_drop_target.drag_over {border: 4px dashed #96C4EA; color: #96C4EA;margin-right:20px;}
 #upload_progress {padding: 4px 0;}
 #upload_progress .error {color:#a00;}
 #upload_progress > div { padding:3px 0;}
@@ -234,7 +234,7 @@ label { display:block; font-size:11px; color:#555;}
 .progress {background-color: #82CFFA;height:10px; }
 footer {font-size:11px; color:#bbbbc5; padding:4em 0 0;text-align: left;}
 footer a, footer a:visited {color:#bbbbc5;}
-#breadcrumb { padding-top:34px; font-size:15px; color:#aaa;display:inline-block;float:left;}
+#breadcrumb {padding-top:5px;font-size:15px; color:#aaa;display:inline-block;float:left;}
 #folder_actions {width: 50%;float:right;}
 a, a:visited { color:#00c; text-decoration: none}
 a:hover {text-decoration: underline}
@@ -521,10 +521,16 @@ $(function(){
 		<input type="file" multiple />
 	</div>
    <?php endif; ?>
-	<div id="breadcrumb">&nbsp;</div>
+   
+<div id="upload_progress"></div>
+</div>
+<h5 style="float:left; padding-right:5px;">Current Folder: <h5>
+<div id="breadcrumb">
+
+&nbsp;
+</div>
 </div>
 
-<div id="upload_progress"></div>
 <table id="table"><thead><tr>
 	<th>Name</th>
 	<th>Size</th>

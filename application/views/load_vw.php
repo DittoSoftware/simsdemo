@@ -113,34 +113,40 @@ $path = 'D:\home\site\wwwroot\application\files\\';
 
 $options = "";
 $a = array();
-if(is_dir($dir_path))
-{
-    $files = opendir($dir_path);
-    {
-        if($files)
-        {
-          while(($file_name = readdir($files)) !== FALSE)
-          {
-              if($file_name != '.' && $file_name != '..')
-              {
-               // select option with files names 
-               array_push($a, $file_name);
-               // display the file names
-              //    echo $file_name."<br>";
-                    // print_r($a);
-                    // echo "<br>";
+// if(is_dir($dir_path))
+// {
+//     $files = opendir($dir_path);
+//     {
+//         if($files)
+//         {
+//           while(($file_name = readdir($files)) !== FALSE)
+//           {
+//               if($file_name != '.' && $file_name != '..')
+//               {
+//                // select option with files names 
+//                array_push($a, $file_name);
+//                // display the file names
+//               //    echo $file_name."<br>";
+//                     // print_r($a);
+//                     // echo "<br>";
                     
-              }
-          }
-        }
-    }
-}
+//               }
+//           }
+//         }
+//     }
+// }
 
 
 
-//add file path
-for($i=0; $i < count($a); $i++){
-  $a[$i] = $path . $a[$i];
+// //add file path
+// for($i=0; $i < count($a); $i++){
+//   $a[$i] = $path . $a[$i];
+// }
+
+
+
+foreach (glob("D:\home\site\wwwroot\application\\files\*.xlsx") as $file) {
+  $a[] = $file;
 }
 
 $selected = array();

@@ -39,9 +39,9 @@ if($PASSWORD) {
 // must be in UTF-8 or `basename` doesn't work
 setlocale(LC_ALL,'en_US.UTF-8');
 
-chdir('C:\xampp\htdocs');
+//chdir('C:\xampp\htdocs');
 //chdir('C:\xampp\htdocs\simsdemo\application\files');
-//chdir('D:\home\site\wwwroot\application\files');
+chdir('D:\home\site\wwwroot\application\files');
 
 
 $tmp_dir = dirname($_SERVER['SCRIPT_FILENAME']);
@@ -191,6 +191,24 @@ function asBytes($ini_v) {
 	return intval($ini_v) * ($s[strtolower(substr($ini_v,-1))] ?: 1);
 }
 $MAX_UPLOAD_SIZE = min(asBytes(ini_get('post_max_size')), asBytes(ini_get('upload_max_filesize')));
+
+function downloadThis(){
+	$file = 'template.xlsx';
+
+	if (file_exists($file)) {
+		header('Content-Description: File Transfer');
+		header('Content-Type: application/octet-stream');
+		header('Content-Disposition: attachment; filename="'.basename($file).'"');
+		header('Expires: 0');
+		header('Cache-Control: must-revalidate');
+		header('Pragma: public');
+		header('Content-Length: ' . filesize($file));
+		readfile($file);
+		exit;
+	}
+
+}
+
 ?>
 <!DOCTYPE html>
 <html><head>
@@ -428,9 +446,12 @@ $(function(){
 
 function validate(){
 
-
-		document.getElementById("file_drop_target").style.display="inline";
+		if(document.getElementById("pass").value == "CisJax"){
+		document.getElementById("post_password").style.display="inline";
 		document.getElementById("password_box").style.display="none";
+		} else {
+			alert ("Password incorrect. Please try again.");
+		}
 		
 
 }
@@ -459,23 +480,35 @@ function validate(){
 	<br>
 	<br>
 	<div id="password_box" onsubmit="return false;" style="display:block">
-		<form>
+		<h5>Enter Upload Password:</h5>
+		<form id="form">
 			<input type="password" id="pass" name="password">
 		   	<input type="submit" value="Submit" onClick="validate()">
 		</form>
 	</div>
-	
+	</center>
    <?php if($allow_upload): ?>
-
-	<div id="file_drop_target" style="display:none">
+	<div id="post_password" style="display:none" >
+	<center>
+	<div id="file_drop_target" >
 		Drag Files Here To Upload
 		<b>or</b>
 		<input type="file" multiple />
 
 	</div>
+	</center>
+	
+	
+	
+	
 
+	</div>
+	<br>
+	<center>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/kaSSJ2GUfbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</center>
    <?php endif; ?>
-   </center>
+   
 </div>
 </div>
 </div>
