@@ -25,6 +25,10 @@ var data = google.visualization.arrayToDataTable([
     "legend": {"position": "bottom"}};
 
   var chart = new google.visualization.PieChart(document.getElementById("'.$field.'"));
+  google.visualization.events.addListener(chart, "ready", function () {
+    '.$field.'.innerHTML = "<img src="" + chart.getImageURI() + """>";
+    console.log('.$field.'.innerHTML);
+  });
   chart.draw(data, options);
 }
 </script>'
