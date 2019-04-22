@@ -190,6 +190,7 @@
                      </select>
                      <br><br>
                      <?php echo "Currently Displaying: ".$_POST['s_id']."'s Student Data" ; ?>
+                     <br>
                      <button type="submit">Update Charts</button><br><br>
                      </div>       
             

@@ -176,21 +176,9 @@
                      </select>
                      <br><br>
                      <?php echo "Currently Displaying: ".$_POST['s_id']."'s Student Data" ; ?>
+                     <br>
                      <button type="submit">Update Charts</button><br><br>
-                     <h4 class="card-title text-center">Attendence</h4>
-                        <?php
-                              $school = $_POST['s_id']; 
-                              $pres = metricCount('Days_Absent','tbl_name',$school);
-                              echo "Number of Absents equal to ".$pres[1]["Days_Absent"].": ".$pres[1]["count"]."<br><br>";
-                              echo "Number of Absents equal to ".$pres[2]["Days_Absent"].": ".$pres[2]["count"]."<br><br>";
-                              echo "Number of Absents equal to ".$pres[3]["Days_Absent"].": ".$pres[3]["count"]."<br><br>";
-                              echo "Number of Absents equal to ".$pres[4]["Days_Absent"].": ".$pres[4]["count"]."<br><br>";
-                              echo "Number of Absents equal to ".$pres[5]["Days_Absent"].": ".$pres[5]["count"]."<br><br>";
-                              echo "Number of Absents equal to ".$pres[6]["Days_Absent"].": ".$pres[6]["count"]."<br><br>";
-                              echo "Number of Absents equal to ".$pres[7]["Days_Absent"].": ".$pres[7]["count"]."<br><br>";
-                             
-                        ?>    
-</div>       
+                     </div>       
             
         
         <!--Card deck-->
