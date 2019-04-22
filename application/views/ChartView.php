@@ -23,7 +23,6 @@ var data = google.visualization.arrayToDataTable([
   }
     echo 'var options = {"title":"# of Students by '.$topic.'", "width":200, "height":350, "chartArea": {"width": "100%", "height": "80%"},
     "legend": {"position": "bottom"}};
-
   var chart = new google.visualization.PieChart(document.getElementById("'.$field.'"));
   chart.draw(data, options);
 }
