@@ -496,13 +496,17 @@ function validate(){
 		<input type="file" multiple />
 
 	</div>
-	<br>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/rzmAYiR7mR4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</center>
+	
+	
 	
 	
 
 	</div>
+	<br>
+	<center>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/kaSSJ2GUfbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</center>
    <?php endif; ?>
    
 </div>
