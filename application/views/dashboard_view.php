@@ -36,6 +36,9 @@
          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav navbar-right">
                <li class="nav-item">
+			         <a class="nav-link logoutButton" href='https://www.youtube.com/playlist?list=PL0Xo9pCPuP1DMASxO36O8oLRdDvY1g5IA' target="_blank"><button type="button"  ;">Help</button></a>
+			      </li>
+               <li class="nav-item">
                   <a class="nav-link logoutButton"><button type="button"  onclick="location.href='https://cissimsdev.azurewebsites.net/index.php/signin/logout';">Logout</button></a>
                </li>
             </ul>
