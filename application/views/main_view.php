@@ -61,7 +61,7 @@
    
       <div class="container-fluid text-left">    
       <div class="row content">
-      <div class="col-sm-2 sidenav">
+      <div class="col-sm-2 sidenav h-100">
               <br>
               <img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
               <br><br>
@@ -201,7 +201,7 @@
                   <h2 class="text-center">Dashboard</h2>
                   <div class="card-deck center-align">
                       <!--card-->
-                        <div class="card mb-4 shadow p-3 mb-5 bg-white rounded h-100">
+                        <div class="card mb-4 shadow p-3 mb-5 bg-white rounded h-75 w-100">
                            <div class="card-body center">
                               <h4 class="card-title text-center">Grade Level</h4>
                         <div id="piechart"></div>
@@ -228,7 +228,7 @@
                         
                         </div>
                         <!--card-->
-                        <div class="card mb-4 shadow p-3 mb-5 bg-white rounded h-100">
+                        <div class="card mb-4 shadow p-3 mb-5 bg-white rounded h-75 w-100">
                            <div class="card-body center">
                               <h4 class="card-title text-center">Race</h4>
                         <div id="piechart2"></div>
@@ -255,7 +255,7 @@
                         
                         </div>
                               <!--Card-->
-                              <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
+                              <div class="card mb-4 shadow p-3 mb-5 bg-white rounded h-75 w-100">
                            <div class="card-body center">
                               <h4 class="card-title text-center">Gender</h4>
                               <div id="piechart3"></div>
