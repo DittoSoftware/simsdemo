@@ -61,7 +61,7 @@
    
       <div class="container-fluid text-left">    
       <div class="row content">
-      <div class="col-sm-2 sidenav pb-100">
+      <div class="col-sm-2 sidenav">
               <br>
               <img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
               <br><br>
