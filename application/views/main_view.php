@@ -61,7 +61,7 @@
    
       <div class="container-fluid text-left">    
       <div class="row content">
-      <div class="col-sm-2 sidenav h-2000">
+      <div class="col-sm-2 sidenav mb-100">
               <br>
               <img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
               <br><br>
@@ -197,7 +197,7 @@
         
         <!--Card deck-->
         <div class="col-sm-8 text-left">
-                  <br>
+                  <br>Changes!
                   <h2 class="text-center">Dashboard</h2>
                   <div class="card-deck center-align">
                       <!--card-->
