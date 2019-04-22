@@ -197,7 +197,7 @@
         
         <!--Card deck-->
         <div class="col-sm-8 text-left">
-                  <br>
+                  <br>Changes!
                   <h2 class="text-center">Dashboard</h2>
                   <div class="card-deck center-align">
                       <!--card-->
