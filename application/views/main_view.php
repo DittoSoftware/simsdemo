@@ -61,7 +61,7 @@
    
       <div class="container-fluid text-left">    
       <div class="row content">
-      <div class="col-sm-2 sidenav">
+      <div class="col-sm-2 sidenav h-2000">
               <br>
               <img class="logo" src="<?= base_url()?>/images/cisLogo.png" alt="logo">
               <br><br>
@@ -333,7 +333,7 @@
                               </div>
                               </div>
                               <!--Card-->
-                              <div class="card mb-4 shadow p-3 mb-5 bg-white rounded ml-auto">
+                              <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
                            <div class="card-body center">
                               <h4 class="card-title text-center">AmeriCorps</h4>
                               <div id="piechart6"></div>
