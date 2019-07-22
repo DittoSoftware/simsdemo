@@ -20,14 +20,14 @@ if(isset($_POST['username'])){
         // exit();
         session_start();
         $_SESSION['username'] = $_POST['username'];
-        header('Location: main');
+        header('Location: index.php/main');
     }
     elseif(mysqli_num_rows($result2) == 1){
         // echo "Successful Login";
         // exit();
         session_start();
         $_SESSION['username'] = $_POST['username'];
-        header('Location: dashboard');
+        header('Location: index.php/dashboard');
     }
     else{
 
